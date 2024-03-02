@@ -2,10 +2,10 @@
 
 // shop
 h3.ic-shop-count-title {
-  background: #f9f9f9;
+  background: var(--ic-common-white);
   padding: 20px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: var(--ic-fw-medium);
   border-radius: 5px;
   margin-bottom: 50px;
 }
@@ -14,8 +14,8 @@ h3.ic-shop-count-title {
   margin-bottom: 50px;
   & strong {
     font-size: 15px;
-    font-weight: 500;
-    color: red;
+    font-weight: var(--ic-fw-medium);
+    color: var(--ic-theme-1);
     text-transform: capitalize;
     cursor: pointer;
     @media #{$lg,$md} {
@@ -33,7 +33,7 @@ h3.ic-shop-count-title {
       font-weight: 400;
       text-transform: capitalize;
       cursor: pointer;
-      border: 2px solid #ddd;
+      border: 2px solid var(--ic-border-1);
       margin-bottom: 10px;
       margin-left: 5px;
       overflow: hidden;
@@ -44,7 +44,7 @@ h3.ic-shop-count-title {
         font-size: 14px;
       }
       & i {
-        color: red;
+        color: var(--ic-theme-1);
         margin-left: 5px;
         font-size: 18px;
       }
@@ -62,7 +62,7 @@ h3.ic-shop-count-title {
   border-radius: 5px;
   margin: 0 3px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--ic-fw-medium);
   transition: 0.3s;
     @media #{$sm} {
       padding: 5px 12px;
@@ -99,7 +99,7 @@ h3.ic-shop-count-title {
   color: var(--ic-common-black);
   font-size: 52px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--ic-fw-sbold);
   line-height: 120%;
   letter-spacing: 1.04px;
   text-transform: capitalize;
@@ -134,7 +134,7 @@ h3.ic-shop-count-title {
   color: var(--ic-theme-1);
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--ic-fw-sbold);
   line-height: 140%;
   text-decoration-line: underline;
   text-transform: capitalize;
@@ -142,7 +142,7 @@ h3.ic-shop-count-title {
 .ic-btn-shop-collection {
   display: inline-block;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: var(--ic-fw-sbold);
   color: var(--ic-common-white);
   background: var(--ic-theme-1);
   height: 50px;
@@ -179,9 +179,9 @@ h3.ic-shop-count-title {
   }
 }
 .ic-btn-shop-collection i {
-  background: #fff;
+  background: var(--ic-common-white);
   padding: 10px 10px;
-  color: red;
+  color: var(--ic-theme-1);
   border-radius: 30px;
   margin-left: 10px;
   line-height: 1;
@@ -196,8 +196,8 @@ h3.ic-shop-count-title {
 
 .shop-collection-2 .ic-btn-shop-title {
   font-size: 15px;
-  font-weight: 600;
-  color: #222;
+  font-weight: var(--ic-fw-sbold);
+  color: var(--ic-heading-primary);
   letter-spacing: 1.1px;
   line-height: 1.5;
   padding: 20px 15px 15px;

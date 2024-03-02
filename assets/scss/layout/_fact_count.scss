@@ -11,21 +11,21 @@
 	& h2{
 		font-size: 70px;
 		color: transparent;
-		-webkit-text-stroke: 1px #fff;
+		-webkit-text-stroke: 1px var(--ic-common-white);
 		line-height: 1;
 		margin: 0;
 	}
 	& span{
-		background: #fff;
+		background: var(--ic-common-white);
 		height: 40px;
 		width: 40px;
 		border-radius: 50%;
 		display: inline-block;
 		text-align: center;
 		line-height: 40px;
-		color: #212121;
+		color: var(--ic-heading-primary);
 		font-size: 20px;
-		font-weight: 700;
+		font-weight: var(--ic-fw-bold);
 		transform: translateY(-26px);
 	}
 }
@@ -35,11 +35,11 @@
 	z-index: 2;
 	& h4{
 		font-size: 20px;
-		color: #fff;
+		color: var(--ic-common-white);
 	}
 	& p{
 		font-size: 14px;
-		color: #fff;
+		color: var(--ic-common-white);
 		margin: 0;
 	}
 }
@@ -56,7 +56,7 @@
 	color: #448ca0;
 	font-size: 100px;
 	line-height: 42px;
-	font-weight: 700;
+	font-weight: var(--ic-fw-bold);
 	counter-increment: count;
 	content: "0"counter(count);
 	transition: all 500s ease;

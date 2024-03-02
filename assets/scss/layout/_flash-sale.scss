@@ -10,7 +10,7 @@
 
 .flash-sale-time {
   display: inline-block;
-  border: 5px solid #fff;
+  border: 5px solid var(--ic-common-white);
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 50px;
@@ -22,10 +22,10 @@
     & li {
       display: inline-block;
       padding: 17px 20px;
-      color: red;
+      color: var(--ic-theme-1);
       font-size: 25px;
-      font-weight: 600;
-      background: #fff;
+      font-weight: var(--ic-fw-sbold);
+      background: var(--ic-common-white);
       border-radius: 5px;
       margin: 0 5px;
       @media #{$sm} {
@@ -38,9 +38,9 @@
 .flash-sale-text {
   & ul {
     & li {
-      color: #fff;
+      color: var(--ic-common-white);
       font-size: 18px;
-      font-weight: 500;
+      font-weight: var(--ic-fw-medium);
       display: inline-block;
       padding: 0 15px;
       margin-top: 20px;

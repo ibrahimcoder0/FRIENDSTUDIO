@@ -20,17 +20,17 @@
   }
 }
 .ic-about-content {
-  background: #fff;
+  background: var(--ic-common-white);
   padding: 50px 30px;
   & h5 {
     font-size: 20px;
-    color: red;
+    color: var(--ic-theme-1);
     margin-bottom: 15px;
   }
   & h2 {
     font-size: 48px;
-    color: #000;
-    font-weight: 600;
+    color: var(--ic-heading-primary);
+    font-weight: var(--ic-fw-sbold);
     line-height: 1.2;
     margin-bottom: 15px;
     @media #{$xl}{
@@ -47,17 +47,17 @@
     }
   }
   p {
-    color: #222;
+    color: var(--ic-text-p);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: var(--ic-fw-medium);
     margin-bottom: 15px;
     display: block;
   }
   a {
-    color: red;
+    color: var(--ic-theme-1);
     font-size: 20px;
-    font-weight: 600;
-    border-bottom: 1px solid red;
+    font-weight: var(--ic-fw-sbold);
+    border-bottom: 1px solid var(--ic-theme-1);
   }
 }
 
@@ -83,7 +83,7 @@
 .ic-about-count-title {
     color: var(--ic-theme-2);
     font-size: 48px;
-    font-weight: 700;
+    font-weight: var(--ic-fw-bold);
     @media #{$md}{
       font-size: 35px;
     }
@@ -94,7 +94,7 @@
 .ic-about-count-subtitle {
     color: var(--ic-common-white);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--ic-fw-sbold);
     margin-bottom: 0;
     @media #{$md}{
       font-size: 15px;

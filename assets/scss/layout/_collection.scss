@@ -31,13 +31,13 @@
   }
   & a {
     &.black {
-      color: #000;
+      color: var(--ic-common-black);
     }
   }
   & .ic-btn-title {
     font-size: 24px;
-    font-weight: 600;
-    color: #fff;
+    font-weight: var(--ic-fw-sbold);
+    color: var(--ic-common-white);
     letter-spacing: 1.1px;
     line-height: 1.5;
     padding: 20px;

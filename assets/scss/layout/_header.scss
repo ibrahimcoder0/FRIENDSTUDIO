@@ -19,7 +19,7 @@
   & p {
     color: var(--ic-common-black);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--ic-fw-medium);
     margin: 0;
   }
 }
@@ -41,13 +41,13 @@
   background: var(--ic-theme-1);
   padding: 10px 20px;
   border: 1px solid var(--ic-theme-1);
-  color: #fff;
+  color: var(--ic-common-white);
   font-size: 18px;
 }
 .ic-header-right-wraper {
   & button {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--ic-fw-sbold);
     margin-right: 20px;
     @media #{$sm} {
       display: none;
@@ -57,7 +57,7 @@
 .ic-header-account-icon {
   & i {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: var(--ic-fw-medium);
     margin-right: 20px;
     @media #{$sm} {
       display: none;
@@ -67,14 +67,14 @@
 .ic-header-cart-icon {
   & i {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: var(--ic-fw-medium);
     margin-right: 20px;
   }
 }
 .ic-header-wishlist-icon {
   & i {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: var(--ic-fw-medium);
   }
 }
 .ic-header-main-logo {
@@ -99,13 +99,13 @@
       }
       &:hover {
         background: var(--ic-theme-1);
-        color: #fff;
+        color: var(--ic-common-white);
       }
       & a {
         display: inline-block;
-        color: #060516;
+        color: var(--ic-text-body);
         &:hover {
-          color: #fff;
+          color: var(--ic-common-white);
         }
       }
       &.has-dropdown:after {
@@ -120,7 +120,7 @@
         width: 220px;
         right: 0;
         top: 115%;
-        background: #f7f7f7;
+        background: var(--ic-common-white);
         height: auto;
         text-align: left;
         opacity: 0;
@@ -132,7 +132,7 @@
           margin: 0;
           &:hover {
             background: var(--ic-theme-1);
-            color: #fff;
+            color: var(--ic-common-white);
           }
         }
       }
@@ -169,7 +169,7 @@
   top: 0;
   width: 320px;
   height: 100%;
-  background: #ffffff none repeat scroll 0 0;
+  background: var(--ic-common-white) none repeat scroll 0 0;
   overflow-y: scroll;
   -webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
@@ -212,9 +212,9 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background: #edeef3;
+  background: var(--ic-common-white);
   outline: none;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--ic-common-white);
   font-size: 16px;
   padding: 22px 65px 20px 55px;
   position: relative;
@@ -227,10 +227,10 @@
   left: 50px;
 }
 .sidebar__search button i::before {
-  color: #8c8faa;
+  color: var(--ic-text-p);
 }
 .sidebar__search button i::after {
-  color: #222429;
+  color: var(--ic-text-p);
   opacity: 1;
 }
 
@@ -246,10 +246,10 @@
 .ic-mobile-contact .icon i {
   color: var(--ic-theme-1);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--ic-fw-medium);
 }
 .ic-mobile-contact .text span a {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: var(--ic-fw-medium);
   color: var(--ic-common-black);
 }

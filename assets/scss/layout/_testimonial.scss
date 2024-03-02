@@ -9,7 +9,7 @@
   & h6 {
     color: var(--ic-common-black);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--ic-fw-bold);
     text-transform: uppercase;
     @media #{$sm} {
     font-size: 14px;
@@ -20,7 +20,7 @@
       background: var(--ic-theme-1);
       padding: 0 5px;
       border-radius: 30px;
-      color: #fff;
+      color: var(--ic-common-white);
       font-size: 16px;
       margin-right: 10px;
     }
@@ -52,7 +52,7 @@
   margin: 15px;
   h5 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--ic-fw-sbold);
     color: var(--ic-common-black);
     margin-top: 14px;
   }
@@ -65,7 +65,7 @@
   }
   & p {
     color: var(--ic-text-p);
-    font-weight: 500;
+    font-weight: var(--ic-fw-medium);
     font-size: 17px;
     line-height: 30px;
   }

@@ -12,15 +12,15 @@
 .ic-breadcrumb-item {
   & p {
     font-size: 20px;
-    color: #fff;
-    font-weight: 500;
+    color: var(--ic-common-white);
+    font-weight: var(--ic-fw-medium);
     margin-top: 20px;
     margin-bottom: 25px;
   }
   & .ic-breadcrumb-title {
-    color: #fff;
+    color: var(--ic-common-white);
     font-size: 78px;
-    font-weight: 700;
+    font-weight: var(--ic-fw-bold);
     line-height: 1.1;
     text-transform: uppercase;
     @media #{$md} {
@@ -39,12 +39,12 @@
   & ul {
     & li {
       display: inline-block;
-      color: #222;
+      color: var(--ic-heading-primary);
       padding: 0 1px;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: var(--ic-fw-medium);
       &.active-home {
-        color: red;
+        color: var(--ic-theme-1);
       }
     }
   }

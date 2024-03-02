@@ -18,22 +18,22 @@
 }
 .ic-icon-service h4 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: var(--ic-fw-sbold);
   line-height: 1;
 }
 .ic-icon-service p {
-  color: #868e96;
+  color: var(--ic-text-p);
   margin-top: 12px;
 }
 
 // footer top
 .black-light-bg {
-  background: #000;
+  background: var(--ic-common-black);
 }
 .ic-footer-top-content a i {
   font-size: 40px;
   color: var(--ic-theme-1);
-  font-weight: 300;
+  font-weight: var(--ic-fw-light);
         @media #{$md,$sm} {
         font-size: 25px;
       }
@@ -42,7 +42,7 @@
 .ic-footer-top-text h3 {
   font-size: 25px;
   color: var(--ic-common-white);
-  font-weight: 700;
+  font-weight: var(--ic-fw-bold);
   margin-bottom: 10px;
         @media #{$md,$sm} {
         font-size: 20px;
@@ -66,7 +66,7 @@
 h3.ic-footer-widget-title {
   font-size: 24px;
   color: var(--ic-common-white);
-  font-weight: 600;
+  font-weight: var(--ic-fw-sbold);
   line-height: 1.5;
   margin-bottom: 20px;
   & span {
@@ -105,7 +105,7 @@ button.subscript-btn {
       display: inline-flex;
       padding: 5px 10px;
       line-height: 25px;
-      background: #161717;
+      background: var(--ic-common-black);
       border-radius: 30px;
       margin: 0 5px;
       color: var(--ic-common-white);
@@ -120,7 +120,7 @@ button.subscript-btn {
 .ic-footer-menu-link {
   & ul {
     & li {
-      color: #868e96;
+      color: var(--ic-text-p);
       list-style: none;
       padding: 5px;
       transition: 0.3s;

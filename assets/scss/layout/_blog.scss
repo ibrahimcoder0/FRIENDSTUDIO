@@ -10,9 +10,9 @@
 }
 .ic-section-blog-title {
   & h2 {
-    color: #fff;
+    color: var(--ic-common-white);
     font-size: 52px;
-    font-weight: 400;
+    font-weight: var(--ic-fw-regular);
     @media #{$sm}{
       font-size: 25px;
     }
@@ -20,9 +20,9 @@
 }
 .ic-blog-title {
   & h3 {
-    color: #fff;
+    color: var(--ic-common-white);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--ic-fw-sbold);
     line-height: 1.2;
     margin: 20px 0;
     text-transform: capitalize;
@@ -35,9 +35,9 @@
   }
 }
 .ic-blog-btn {
-  color: #fff;
+  color: var(--ic-common-white);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: var(--ic-fw-sbold);
   transition: .3s;
   & i{
     &.ic-icon {
@@ -46,7 +46,7 @@
     width: 0 !important;
     height: 0 !important;
     font-size: 14px !important;
-    color: #fff !important;
+    color: var(--ic-common-white) !important;
     margin-left: 5px !important;
     &:hover{
         color: var(--ic-theme-1) !important;
@@ -75,8 +75,7 @@
     height: 50px;
     line-height: 50px;
     text-align: center;
-    color: var(
-  --ic-theme-1);
+    color: var(--ic-theme-1);
     font-size: 18px;
     border-radius: 30px;
     box-shadow: 0px 4px 24px 0px rgba(153, 171, 189, 0.25);

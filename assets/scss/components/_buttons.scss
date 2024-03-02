@@ -63,7 +63,7 @@
 .ic-btn{
 	display: inline-block;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: var(--ic-fw-medium);
 	color: var(--ic-common-white);
 	background: var(--ic-theme-1);
 	height: 50px;
@@ -153,9 +153,9 @@
 				line-height: 50px;
   }
 	& i{
-		background: #fff;
+		background: var(--ic-common-white);
     padding: 12px 15px;
-    color: red;
+    color: var(--ic-theme-1);
     border-radius: 30px;
     margin-left: 30px;
     line-height: 1;
@@ -183,9 +183,9 @@
 .ic-black-btn{
 	display: inline-block;
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: var(--ic-fw-bold);
 	color: var(--ic-common-white);
-	background: #171717;
+	background: var(--ic-common-black);
 	height: 60px;
 	line-height: 62px;
 	text-align: center;
@@ -298,7 +298,7 @@
 	position: relative;
 	font-size: 16px;
 	color: var(--ic-text-1);
-	font-weight: 500;
+	font-weight: var(--ic-fw-medium);
 	padding-right: 21px;
 	display: inline-block;
 	& i{

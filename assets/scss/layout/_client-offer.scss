@@ -16,8 +16,8 @@
 }
 .ic-client-offer-img span {
     font-size: 30px;
-    color: #fff;
-    font-weight: 700;
+    color: var(--ic-common-white);
+    font-weight: var(--ic-fw-bold);
     margin-bottom: 0;
     line-height: 1;
     @media #{$md} {

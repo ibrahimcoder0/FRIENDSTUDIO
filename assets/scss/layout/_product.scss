@@ -37,16 +37,16 @@
 }
 .ic-product-descunt {
   & span {
-    color: #fff;
-    background: #f08833;
+    color: var(--ic-common-white);
+    background: var(--ic-theme-2);
     padding: 4px 15px;
     border-radius: 30px;
     &.save-outline {
-      color: #f08833;
+      color: var(--ic-theme-2);
       background: none;
       padding: 4px 15px;
       border-radius: 30px;
-      border: 1px solid #f08833;
+      border: 1px solid var(--ic-theme-2);
       margin-left: 10px;
     }
   }
@@ -54,8 +54,8 @@
 .ic-product-wishlist {
   & i {
     font-size: 20px;
-    color: red;
-    font-weight: 300;
+    color: var(--ic-theme-1);
+    font-weight: var(--ic-fw-light);
   }
 }
 .ic-product-variable {
@@ -110,7 +110,7 @@
 }
 
 .ic-product-price span {
-    color: #000;
+    color: var(--ic-heading-primary);
     font-size: 18px;
-    font-weight: 600;
+    font-weight: var(--ic-fw-sbold);
 }

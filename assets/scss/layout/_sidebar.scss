@@ -6,7 +6,7 @@
   top: 0;
   width: 350px;
   height: 100%;
-  background: #ffffff none repeat scroll 0 0;
+  background: var(--ic-common-white) none repeat scroll 0 0;
   overflow-y: scroll;
   -webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
@@ -60,13 +60,13 @@
   margin-right: 15px;
   & .accordion-button {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--ic-fw-sbold);
     text-transform: capitalize;
-    color: #222;
+    color: var(--ic-common-black);
     padding-left: 0;
     padding-right: 0;
     &:not(.collapsed) {
-      color: red;
+      color: var(--ic-theme-1);
       background-color: transparent;
       box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
     }
@@ -77,7 +77,7 @@
       box-shadow: none;
     }
     &::after {
-      border: 2px solid #ddd;
+      border: 2px solid var(--ic-boder-1);
       border-radius: 30px;
       width: 35px;
       height: 35px;
@@ -94,7 +94,7 @@
 
 //Filter by sort
 .ic-filter-by-sort {
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid var(--ic-boder-1);
   padding-bottom: 30px;
   & .filter {
     @media #{$md,$sm} {
@@ -106,7 +106,7 @@
     & span {
       & i {
         font-size: 15px;
-        font-weight: 500;
+        font-weight: var(--ic-fw-medium);
         margin-left: 6px;
       }
     }
@@ -119,9 +119,9 @@
 
 // Categories
 .ic-shop-widget-title {
-  font-weight: 500;
+  font-weight: var(--ic-fw-medium);
   font-size: 18px;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid var(--ic-boder-1);
   padding-bottom: 5px;
   margin-bottom: 0px;
 }
@@ -145,9 +145,9 @@
         margin-bottom: 10px;
       }
       & a {
-        font-weight: 400;
+        font-weight: var(--ic-fw-regular);
         font-size: 15px;
-        color: #55585b;
+        color: var(--ic-heading-primary);
         position: relative;
         padding-left: 16px;
         display: -webkit-box;
@@ -160,10 +160,10 @@
         width: 100%;
         transition: 0.3s;
         & span {
-          font-weight: 500;
+          font-weight: var(--ic-fw-medium);
           font-size: 12px;
           line-height: 1;
-          border: 1px solid #eaeaea;
+          border: 1px solid var(--ic-boder-1);
           border-radius: 8px;
           padding: 5px 6px 3px;
           transition: 0.3s;
@@ -188,7 +188,7 @@
           width: 15px;
           height: 15px;
           text-align: center;
-          background-color: #e7e7e7;
+          background-color: var(--ic-common-white);
           border-radius: 50%;
           transition: 0.3s;
         }
@@ -230,7 +230,7 @@
         }
         & label {
           font-size: 16px;
-          color: #55585b;
+          color: var(--ic-text-body);
           position: relative;
           padding-left: 26px;
           &::before {
@@ -274,10 +274,10 @@
         }
       }
       & .ic-shop-widget-checkbox-circle-number {
-        font-weight: 500;
+        font-weight: var(--ic-fw-medium);
         font-size: 12px;
         line-height: 1;
-        border: 1px solid #eaeaea;
+        border: 1px solid var(--ic-boder-1);
         border-radius: 8px;
         padding: 5px 6px 3px;
       }
@@ -322,20 +322,20 @@
 }
 .ic-shop-widget-product-rating span {
   font-size: 12px;
-  color: #ffb21d;
+  color: var(--ic-theme-2);
   margin-right: 1px;
 }
 .ic-shop-widget-product-rating-number span {
-  font-weight: 500;
+  font-weight: var(--ic-fw-medium);
   font-size: 12px;
-  color: #818487;
+  color: var(--ic-text-body);
 }
 .ic-shop-widget-product-title {
-  font-weight: 500;
+  font-weight: var(--ic-fw-medium);
   font-size: 16px;
   margin-bottom: 0;
 }
 .ic-shop-widget-product-price {
   font-size: 14px;
-  color: #55585b;
+  color: var(--ic-text-body);
 }

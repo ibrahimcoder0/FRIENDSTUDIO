@@ -45,7 +45,7 @@
 		& li{
 			color: #fff;
 			margin-bottom: 10px;
-			font-weight: 500;
+			font-weight: var(--ic-fw-medium);
 			position: relative;
 			padding-left: 25px;
 			&:last-child{
@@ -67,7 +67,7 @@
 	color: #fff;
 	background: #2bbb94;
 	padding: 1px 0;
-	font-weight: 700;
+	font-weight: var(--ic-fw-bold);
 }
 
 .ic-price-btn {
@@ -95,10 +95,10 @@
 }
 .ic-price .num__count::before {
     text-align: center;
-    color: #212121;
+    color: var(--ic-heading-primary);
     font-size: 160px;
     line-height: 42px;
-    font-weight: 700;
+    font-weight: var(--ic-fw-bold);
     counter-increment: count;
     content: "0" counter(count);
     transition: all 500s ease;
