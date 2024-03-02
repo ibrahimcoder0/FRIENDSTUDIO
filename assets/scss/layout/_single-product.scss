@@ -1,0 +1,141 @@
+@use '../utils' as *;
+
+.ic-single-tabs {
+  & button {
+    &.nav-link {
+      box-shadow: 0px 15px 40px -10px rgba(168, 183, 255, 0.67);
+      background: #fff;
+      margin-bottom: 10px;
+      &.active,
+      .nav-pills .show > .nav-link {
+        color: transparent;
+        background-color: transparent;
+        box-shadow: 0px 0px 10px 0px #c3cdff;
+        padding: 0;
+      }
+    }
+    & img {
+      width: 130px;
+      max-width: 100%;
+    }
+  }
+}
+.ic-single-product-img-tab {
+  box-shadow: 0px 15px 40px -10px rgba(168, 183, 255, 0.67);
+  background: #fff;
+}
+
+//  product content
+.ic-border {
+  border-bottom: 2px solid #222;
+  padding-bottom: 20px;
+}
+.ic-single-ratting ul li {
+  display: inline-block;
+  color: red;
+}
+.ic-single-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.ic-single-price span {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+}
+.ic-single-price del {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.ic-single-product-item .filter .nice-select {
+    width: 250px !important;
+}
+.ic-single-product-item .filter .nice-select .list {
+    width: 100%;
+}
+
+.ic-quantity input[type="number"] {
+    border: 2px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.ic-quantity label {
+    font-size: 15px;
+    color: #222;
+}
+.ic-single-social-share ul li {
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+
+
+
+
+//
+.ic-product-details-variation-list button {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: relative;
+  transition: box-shadow 0.2s 0s linear;
+}
+.ic-product-details-variation-list button span[data-bg-color] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--ic-common-white);
+  border-radius: 50%;
+  transition: all 0.2s 0s linear;
+
+  transform: translate(-50%, -50%);
+}
+.ic-product-details-variation-list button .ic-color-variation-tootltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(2px);
+  width: max-content;
+  background-color: var(--ic-common-black);
+  color: var(--ic-common-white);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease,
+    transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+}
+.ic-product-details-variation-list button:hover span[data-bg-color],
+.ic-product-details-variation-list button.active span[data-bg-color] {
+  -webkit-transform: translate(-50%, -50%) scale(0.7);
+  -moz-transform: translate(-50%, -50%) scale(0.7);
+  -ms-transform: translate(-50%, -50%) scale(0.7);
+  -o-transform: translate(-50%, -50%) scale(0.7);
+  transform: translate(-50%, -50%) scale(0.7);
+}
+.ic-product-details-variation-list button:hover,
+.ic-product-details-variation-list button.active {
+  box-shadow: 0px 1px 2px rgba(1, 15, 28, 0.2);
+}
+.ic-product-details-variation-list button .ic-color-variation-tootltip::before {
+  position: absolute;
+  content: '';
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid var(--ic-common-black);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}

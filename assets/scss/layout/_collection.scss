@@ -1,0 +1,73 @@
+@use '../utils' as *;
+
+.collection-1 {
+  padding-top: 520px;
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  @media #{$xl} {
+    padding-top: 490px;
+  }
+  @media #{$lg} {
+    padding-top: 483px;
+  }
+  @media #{$md} {
+    padding-top: 363px;
+  }
+  @media #{$sm} {
+    margin-bottom: 20px;
+  }
+}
+.collection-2 {
+  padding-top: 210px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  @media #{$md} {
+    padding-top: 145px;
+  }
+  & a {
+    &.black {
+      color: #000;
+    }
+  }
+  & .ic-btn-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1.1px;
+    line-height: 1.5;
+    padding: 20px;
+    display: inline-block;
+    transition: 0.3s;
+    @media #{$xl} {
+      font-size: 20px;
+      line-height: 1;
+      padding-left: 5px;
+    }
+    @media #{$lg} {
+      font-size: 18px;
+      line-height: 1;
+      padding-left: 5px;
+    }
+    @media #{$md} {
+      font-size: 14px;
+      line-height: 1;
+      padding-left: 5px;
+    }
+
+    &:hover {
+      color: var(--ic-theme-1);
+    }
+  }
+}
+
+.mobile-height {
+  @media #{$md} {
+    padding-top: 128px;
+  }
+}
+

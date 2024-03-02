@@ -1,0 +1,78 @@
+@use '../utils' as *;
+
+.ic-fea-bg{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@media #{$md}{
+        position: static;
+        height: 600px;
+        width: 100%;
+    }
+    @media #{$xs}{
+        position: static;
+        height: 400px;
+        width: 100%;
+    }
+}
+.ic-fea-box {
+	@media #{$md}{
+    	padding-right: 20px;
+    	padding-left: 20px;
+    }
+    @media #{$xs}{
+    	padding-right: 0px;
+    	padding-left: 0px;
+    }
+}
+.ic-fea-list-wraper{
+	& ul{
+		list-style: none;
+		& li{
+			padding: 30px 0;
+			border-top: 1px solid #f1f1f1;
+		}
+	}
+}
+.ic-fea-main{
+	display: flex;
+	@media #{$lg}{
+        padding-right: 25px;
+    }
+}
+.ic-fea-list{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.ic-fea-icon{
+	margin-right: 5px;
+	min-width: 80px;
+}
+.ic-fea-content{
+	&.ic-fea-title{
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	& p{
+		font-size: 14px;
+		line-height: 24px;
+	}
+}
+.ic-fea-link{
+	 & a{
+	 	height: 50px;
+	 	width: 50px;
+	 	background: #f1f1f1;
+	 	display: inline-block;
+	 	text-align: center;
+	 	color: #212121;
+	 	border-radius: 50%;
+	 	line-height: 50px;
+	 	font-size: 20px;
+	 }
+}

@@ -1,0 +1,33 @@
+@use '../utils' as *;
+
+
+.ic-section-title {
+    font-size: 48px;
+    font-weight: 500;
+    color: #060516;
+    margin-bottom: 0;
+    @media #{$sm} {
+    font-size: 30px;
+  }
+    &.white-title{
+        color: #fff;
+    }
+}
+.ic-section-sub-title{
+    color: #4a4a4a;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    @media #{$sm} {
+    font-size: 15px;
+    margin-top: 0;
+  }
+    &.white-subtitle{
+        color: #fff;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,67 @@
+@use '../utils' as *;
+
+.ic-fact{
+	display: flex;
+	align-items: start;
+	position: relative;
+}
+.ic-fact-num{
+	display: inline-block;
+	text-align: center;
+	& h2{
+		font-size: 70px;
+		color: transparent;
+		-webkit-text-stroke: 1px #fff;
+		line-height: 1;
+		margin: 0;
+	}
+	& span{
+		background: #fff;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		display: inline-block;
+		text-align: center;
+		line-height: 40px;
+		color: #212121;
+		font-size: 20px;
+		font-weight: 700;
+		transform: translateY(-26px);
+	}
+}
+.ic-fact-content{
+	padding-left: 28px;
+	position: relative;
+	z-index: 2;
+	& h4{
+		font-size: 20px;
+		color: #fff;
+	}
+	& p{
+		font-size: 14px;
+		color: #fff;
+		margin: 0;
+	}
+}
+.counter-row{
+	counter-reset: count;
+}
+.ic-fact .num__count{
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.ic-fact .num__count::before{
+	text-align: center;
+	color: #448ca0;
+	font-size: 100px;
+	line-height: 42px;
+	font-weight: 700;
+	counter-increment: count;
+	content: "0"counter(count);
+	transition: all 500s ease;
+	display: inline-block;
+	@media #{$md,$xs}{
+        font-size: 60px;
+    }
+}

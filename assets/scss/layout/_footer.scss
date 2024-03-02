@@ -1,0 +1,161 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  00. FOOTER CSS START
+/*----------------------------------------*/
+
+.ic-footer-widget {
+  @media #{$md,$sm} {
+    margin-top: 30px;
+  }
+}
+
+.ic-icon-service {
+  padding: 20px 30px;
+}
+.ic-icon-service img {
+  margin-bottom: 20px;
+}
+.ic-icon-service h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+.ic-icon-service p {
+  color: #868e96;
+  margin-top: 12px;
+}
+
+// footer top
+.black-light-bg {
+  background: #000;
+}
+.ic-footer-top-content a i {
+  font-size: 40px;
+  color: var(--ic-theme-1);
+  font-weight: 300;
+        @media #{$md,$sm} {
+        font-size: 25px;
+      }
+}
+
+.ic-footer-top-text h3 {
+  font-size: 25px;
+  color: var(--ic-common-white);
+  font-weight: 700;
+  margin-bottom: 10px;
+        @media #{$md,$sm} {
+        font-size: 20px;
+      }
+}
+.ic-footer-top-text {
+  margin-left: 15px;
+  & a {
+    color: var(--ic-grey-2);
+    font-size: 14px;
+    line-height: 1.6;
+    & br {
+      @media #{$md,$sm} {
+        display: none !important;
+      }
+    }
+  }
+}
+
+// foter main widget
+h3.ic-footer-widget-title {
+  font-size: 24px;
+  color: var(--ic-common-white);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  & span {
+    color: var(--ic-theme-2);
+    margin-left: 10px;
+  }
+}
+.ic-footer-subscribe {
+  margin-right: 20px;
+  & input {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    background: var(--ic-common-white);
+    border-radius: 30px;
+    border: 0;
+    position: relative;
+  }
+}
+button.subscript-btn {
+  width: 40px;
+  height: 40px;
+  background: var(--ic-theme-1);
+  color: var(--ic-common-white);
+  font-size: 20px;
+  border-radius: 30px;
+  position: absolute;
+  left: auto;
+  right: 5px;
+  top: 4px;
+}
+
+.ic-footer-icion {
+  & ul {
+    & li {
+      display: inline-flex;
+      padding: 5px 10px;
+      line-height: 25px;
+      background: #161717;
+      border-radius: 30px;
+      margin: 0 5px;
+      color: var(--ic-common-white);
+      transition: 0.3s;
+      &:hover {
+        background: var(--ic-theme-1);
+      }
+    }
+  }
+}
+
+.ic-footer-menu-link {
+  & ul {
+    & li {
+      color: #868e96;
+      list-style: none;
+      padding: 5px;
+      transition: 0.3s;
+      &:hover {
+        color: var(--ic-theme-2);
+      }
+    }
+  }
+}
+
+.footer-col-1 {
+  margin-right: 40px;
+  @media #{$lg} {
+    margin-right: 10px;
+  }
+}
+.ic-footer-payment-icon {
+  margin-top: -20px;
+  @media #{$lg} {
+    margin-top: 10px;
+  }
+}
+img.payment-img {
+  width: 18%;
+}
+.ic-gray-top, .ic-gray-buttom {
+  @media #{$sm} {
+    padding: 50px;
+  }
+}
+
+
+.ic-footer-top-content {
+  @media #{$sm} {
+        margin: 20px 0;
+  }
+
+}

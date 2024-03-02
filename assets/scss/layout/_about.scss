@@ -1,0 +1,105 @@
+@use '../utils' as *;
+
+
+.ic-about-bg {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    @media #{$md}{
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+}
+.ic-about-wraper {
+    margin-left: -50px;
+    @media #{$sm} {
+    margin-left: 0px;
+  }
+}
+.ic-about-content {
+  background: #fff;
+  padding: 50px 30px;
+  & h5 {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 15px;
+  }
+  & h2 {
+    font-size: 48px;
+    color: #000;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    @media #{$xl}{
+      font-size: 40px;
+    }
+    @media #{$lg}{
+      font-size: 35px;
+    }
+    @media #{$md}{
+      font-size: 25px;
+    }
+    @media #{$sm}{
+      font-size: 25px;
+    }
+  }
+  p {
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: block;
+  }
+  a {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid red;
+  }
+}
+
+
+// About count
+.about-bg-red {
+    width: 23.7%;
+    height: 60px;
+    @media #{$md}{
+      width: 22%;
+    }
+    @media #{$sm}{
+      width:50%;
+    }
+}
+.ic-about-count-num {
+    border-right: 2px dotted;
+    padding: 30px 0;
+    &:last-child(4){
+        border-right: 0;
+    }
+}
+.ic-about-count-title {
+    color: var(--ic-theme-2);
+    font-size: 48px;
+    font-weight: 700;
+    @media #{$md}{
+      font-size: 35px;
+    }
+    @media #{$sm}{
+      font-size: 30px;
+    }
+}
+.ic-about-count-subtitle {
+    color: var(--ic-common-white);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    @media #{$md}{
+      font-size: 15px;
+    }
+    @media #{$sm}{
+      font-size: 15px;
+    }
+}
