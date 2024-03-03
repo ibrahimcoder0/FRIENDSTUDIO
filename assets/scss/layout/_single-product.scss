@@ -34,9 +34,15 @@
   & ul {
     & li {
       display: inline-block;
-      color: var(--ic-theme-1);
+      color: var(--ic-theme-2);
+      margin-left: 0 !important;
+      & i {
+        margin: 0px !important;
+        padding: 0 !important;
+      }
       & span {
-        color: var(--ic-common-black);
+        color: var(--ic-theme-1);
+        text-decoration: underline;
       }
     }
   }
@@ -86,10 +92,19 @@
   & ul {
     & li {
       display: inline-block;
-      padding: 4px 8px;
-      transition: 0.3s;
+      & a {
+        & i {
+          padding: 4px 8px;
+          color: var(--ic-common-black);
+          transition: 0.3s;
+        }
+      }
       &:hover {
-        color: var(--ic-theme-1);
+        & a {
+          & i {
+            color: var(--ic-theme-1);
+          }
+        }
       }
     }
   }
@@ -160,4 +175,164 @@
   border-top: 6px solid var(--ic-common-black);
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
+}
+
+// product details
+.ic-custom-tabs {
+  border-bottom: 2px solid var(--ic-border-1);
+  & li {
+    & button {
+      padding-left: 0;
+      padding-bottom: 30px;
+      padding-right: 20px;
+      margin-right: 20px;
+      color: var(--ic-heading-primary);
+      font-weight: var(--ic-fw-sbold);
+      &.active, :hover{
+          border-bottom: 2px solid red;
+      }
+    }
+  }
+}
+
+
+
+.ic-single-details-title {
+  color: var(--ic-heading-primary);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: var(--ic-fw-bold);
+}
+.ic-single-product-item {
+  & ul {
+    & li {
+      list-style: none;
+      padding: 7px 0;
+      font-size: 16px;
+      margin-left: 20px;
+      color: var(--ic-text-body);
+      font-weight: var(--ic-fw-medium);
+      & i {
+        color: var(--ic-theme-2);
+        font-size: 22px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.ic-single-product-banner {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// review
+.ic-single-average-rating {
+  & h5 {
+    font-size: 19px;
+    font-weight: var(--ic-fw-regular);
+    color: var(--ic-heading-primary);
+  }
+  & h1 {
+    color: var(--ic-theme-2);
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: var(--ic-fw-sbold);
+    padding: 10px 0;
+  }
+  & > a {
+    color: var(--ic-theme-1);
+    padding-top: 6px;
+    display: block;
+    text-decoration: underline;
+  }
+}
+
+.ic-star-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 9px 0;
+  & h4 {
+    font-size: 16px;
+    font-weight: var(--ic-fw-medium);
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+  & h5 {
+    font-size: 16px;
+    font-weight: var(--ic-fw-regular);
+    color: var(--ic-text-p);
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+  & .progress {
+    width: 50%;
+    height: 0.4rem;
+    & .progress-bar {
+      background-color: var(--ic-theme-2);
+    }
+  }
+}
+
+.ic-single-rating {
+  & a {
+    border: 2px solid var(--ic-theme-1);
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: var(--ic-theme-1);
+    transition: 0.3s;
+    & i {
+      margin-right: 10px;
+    }
+    &:hover {
+      border-color: var(--ic-theme-2);
+      color: var(--ic-theme-2);
+    }
+  }
+}
+.ic-single-product-review-item {
+  box-shadow: 0px 15px 40px -10px rgba(168, 183, 255, 0.67);
+  border-radius: 5px;
+  padding: 10px 15px 25px 15px;
+  &:hover {
+    box-shadow: 0px 0px 10px 0px #c3cdff;
+  }
+  & img {
+    width: 100%;
+  }
+  & > p {
+    color: var(--ic-text-p);
+    font-size: 17px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+.ic-single-review-name {
+  & span {
+    font-size: 17px;
+    color: var(--ic-theme-1);
+    & i {
+      margin-right: 10px;
+    }
+  }
+}
+.ic-single-date {
+  & p {
+    font-size: 14px;
+    color: var(--ic-text-p);
+    margin-bottom: 0;
+  }
+}
+.ic-single-btn-like {
+  & a {
+    font-size: 16px;
+    color: var(--ic-text-p);
+    & i {
+      margin-right: 5px;
+      color: var(--ic-common-black);
+    }
+  }
 }
