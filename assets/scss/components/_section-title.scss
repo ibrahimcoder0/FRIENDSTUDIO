@@ -1,33 +1,44 @@
 @use '../utils' as *;
 
-
 .ic-section-title {
-    font-size: 48px;
-    font-weight: 500;
-    color: #060516;
-    margin-bottom: 0;
-    @media #{$sm} {
+  font-size: 40px;
+  font-weight: var(--ic-fw-sbold);
+  color: var(--ic-heading-primary);
+  margin-bottom: 0;
+  text-transform: uppercase;
+  @media #{$lg} {
+    font-size: 35px;
+  }
+  @media #{$md} {
     font-size: 30px;
   }
-    &.white-title{
-        color: #fff;
-    }
+  @media #{$sm} {
+    font-size: 25px;
+  }
+  &.white-title {
+    color: var(--ic-common-white);
+  }
 }
-.ic-section-sub-title{
-    color: #4a4a4a;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 15px;
-    @media #{$sm} {
+.ic-section-sub-title {
+  color: var(--ic-text-body);
+  font-size: 20px;
+  font-weight: var(--ic-fw-sbold);
+  margin-top: 15px;
+  @media #{$sm} {
     font-size: 15px;
     margin-top: 0;
   }
-    &.white-subtitle{
-        color: #fff;
-    }
+  &.white-subtitle {
+    color: var(--ic-common-white);
+  }
 }
-
-
-
-
-
+.ic-section-sub-title-2 {
+  font-size: 27px;
+  font-weight: var(--ic-fw-medium);
+  color: var(--ic-heading-primary);
+  line-height: 1.5;
+  padding: 10px 0;
+  @media #{$sm} {
+    font-size: 18px;
+  }
+}

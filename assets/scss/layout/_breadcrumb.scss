@@ -5,9 +5,9 @@
   background-position: bottom;
   background-repeat: no-repeat;
   padding-left: 300px;
-      @media #{$md,$sm} {
-      padding-left: 10px;
-    }
+  @media #{$md,$sm} {
+    padding-left: 10px;
+  }
 }
 .ic-breadcrumb-item {
   & p {
@@ -23,6 +23,9 @@
     font-weight: var(--ic-fw-bold);
     line-height: 1.1;
     text-transform: uppercase;
+    @media #{$lg} {
+      font-size: 50px;
+    }
     @media #{$md} {
       font-size: 45px;
     }

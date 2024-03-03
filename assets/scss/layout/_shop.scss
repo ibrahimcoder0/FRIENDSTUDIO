@@ -2,7 +2,7 @@
 
 // shop
 h3.ic-shop-count-title {
-  background: var(--ic-common-white);
+  background: var(--ic-grey-2);
   padding: 20px;
   font-size: 18px;
   font-weight: var(--ic-fw-medium);
@@ -29,7 +29,7 @@ h3.ic-shop-count-title {
     & span {
       padding: 15px;
       border-radius: 10px;
-      color: #222;
+      color: var(--ic-grey-3);
       font-weight: 400;
       text-transform: capitalize;
       cursor: pointer;
