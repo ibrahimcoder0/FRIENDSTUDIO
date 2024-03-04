@@ -1,0 +1,48 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  8.18 Product Quantity CSS
+/*----------------------------------------*/
+
+.ic-product-quantity {
+  width: 100px;
+  position: relative;
+  border-radius: 20px;
+}
+.cart-plus svg, .cart-minus svg {
+    transform: translateY(0px);
+}
+.cart-plus, .cart-minus {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    color: var(--ic-common-black);
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+.cart-plus:hover, .cart-minus:hover {
+    cursor: pointer;
+    color: var(--ic-theme-1);
+}
+
+	.cart-plus{
+		left: auto;
+		right: 16px;
+
+		&::after{
+			left: 0;
+			right: auto;
+		}
+	}
+.ic-cart-input[type=text] {
+    height: 34px;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #DADCE0;
+    background-color: var(--ic-common-white);
+    padding: 0 30px;
+    border-radius: 20px;
+}

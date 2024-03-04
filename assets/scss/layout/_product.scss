@@ -1,40 +1,38 @@
 @use '../utils' as *;
 
-
 .ic-product-item {
   position: relative;
   box-shadow: 0px 15px 40px -10px rgba(168, 183, 255, 0.67);
   border-radius: 5px;
-  transition: .3s;
-}
-.ic-product-item:hover {
+  transition: 0.3s;
+  &:hover {
     box-shadow: 0px 0px 10px 0px #c3cdff;
-}
-.ic-product-thumb img {
-    width: 85%;
-}
-.second-img{
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  top: 0;
-  bottom: 5px;
-  margin: auto;
-  left: 15%;
-  transition: .3s;
-}
-.ic-product-thumb:hover .second-img{
-  opacity: 1;
-  visibility: visible;
-  left: 0;
-}
-
-.ic-product-item:hover {
-    box-shadow: 0px 0px 10px 0px #c3cdff;
+  }
 }
 .ic-product-thumb {
+  &:hover {
+    & .second-img {
+      opacity: 1;
+      visibility: visible;
+      left: 0;
+    }
+  }
   padding: 20px;
+  & img {
+    width: 85%;
+    &.second-img {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      top: 0;
+      bottom: 5px;
+      margin: auto;
+      left: 15%;
+      transition: 0.5s;
+    }
+  }
 }
+
 .ic-product-descunt {
   & span {
     color: var(--ic-common-white);
@@ -109,8 +107,10 @@
   }
 }
 
-.ic-product-price span {
+.ic-product-price {
+  & span {
     color: var(--ic-heading-primary);
     font-size: 18px;
     font-weight: var(--ic-fw-sbold);
+  }
 }
