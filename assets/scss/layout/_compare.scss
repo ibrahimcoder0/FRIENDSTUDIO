@@ -1,0 +1,60 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  8.22 compare CSS
+/*----------------------------------------*/
+.ic-compare-table {
+  // position: relative;
+  // // box-shadow: 0px 4px 24px 0px rgba(168, 183, 255, 0.67);
+  // border-radius: 5px;
+  // transition: 0.3s;
+  // &:hover {
+  //   box-shadow: 0px 0px 10px 0px #c3cdff;
+  // }
+  & td,
+  th {
+    vertical-align: middle;
+    border: 1px solid rgba(1, 15, 28, 0.1);
+    padding: 15px 25px;
+  }
+  & td {
+    & .ic-compare-thumb {
+      width: 205px;
+      & img {
+        margin-bottom: 15px;
+        max-width: 100%;
+      }
+      & .ic-compare-product-title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    .ic-compare-price {
+      & span {
+        &.old-price {
+          color: #8c8c8c;
+          text-decoration: line-through;
+        }
+      }
+    }
+    & .ic-compare-rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & span {
+        font-size: 14px;
+        color: var(--ic-yellow-1);
+      }
+    }
+    & .ic-compare-remove {
+      & button {
+        background: transparent;
+        font-size: 16px;
+        color: var(--ic-common-black);
+        &:hover{
+          color: var(--ic-theme-1);
+        }
+      }
+    }
+  }
+}

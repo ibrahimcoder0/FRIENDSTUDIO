@@ -543,14 +543,19 @@
 
   ////////////////////////////////////////////////////
   // 17. Show Login Toggle Js
-  $('#showlogin').on('click', function () {
-    $('#checkout-login').slideToggle(900);
+  $('.ic-checkout-login-form-reveal-btn').on('click', function () {
+    $('#icReturnCustomerLoginForm').slideToggle(400);
   });
 
   ////////////////////////////////////////////////////
   // 18. Show Coupon Toggle Js
-  $('#showcoupon').on('click', function () {
-    $('#checkout_coupon').slideToggle(900);
+  $('.ic-checkout-coupon-form-reveal-btn').on('click', function () {
+    $('#icCheckoutCouponForm').slideToggle(400);
+  });
+  ////////////////////////////////////////////////////
+  // 18. Show checkout payment Toggle Js
+  $('.ic-checkout-payment-item label').on('click', function () {
+    $(this).siblings('.ic-checkout-payment-desc').slideToggle(400);
   });
 
   ////////////////////////////////////////////////////
@@ -592,6 +597,34 @@
       .removeClass('active');
   });
 
+
+
+
+
+
+  
+  ////////////////////////////////////////////////////
+  // 21. Password Toggle Js
+  if ($('#password-show-toggle').length > 0) {
+    var btn = document.getElementById('password-show-toggle');
+
+    btn.addEventListener('click', function (e) {
+      var inputType = document.getElementById('ic_password');
+      var openEye = document.getElementById('open-eye');
+      var closeEye = document.getElementById('close-eye');
+
+      if (inputType.type === 'password') {
+        inputType.type = 'text';
+        openEye.style.display = 'block';
+        closeEye.style.display = 'none';
+      } else {
+        inputType.type = 'password';
+        openEye.style.display = 'none';
+        closeEye.style.display = 'block';
+      }
+    });
+  }
+
   // Product Details
   // ===============
   $('#zoom_02').ezPlus({
@@ -614,6 +647,4 @@
     lensShape: 'round',
     lensSize: 200,
   });
-
-
 })(jQuery);
