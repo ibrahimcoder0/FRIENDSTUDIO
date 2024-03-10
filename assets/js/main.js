@@ -50,8 +50,6 @@
     $('.body-overlay').removeClass('opened');
   });
 
-  // ////////////////////
-  //////////////////////
   ////////////////////////////////////////////////////
   ////////////////////////////////////////////////////
   // 01. shop filter js Start
@@ -85,11 +83,10 @@
     $('.search__area').removeClass('opened');
   });
 
-  ////////////////////////////////////////////////////
   // 06. Sticky Header Js
   windowOn.on('scroll', function () {
-    var scroll = $(window).scrollTop();
-    if (scroll < 100) {
+    var scroll = windowOn.scrollTop();
+    if (scroll < 50) {
       $('#header-sticky').removeClass('header-sticky');
     } else {
       $('#header-sticky').addClass('header-sticky');
@@ -597,12 +594,6 @@
       .removeClass('active');
   });
 
-
-
-
-
-
-  
   ////////////////////////////////////////////////////
   // 21. Password Toggle Js
   if ($('#password-show-toggle').length > 0) {
@@ -622,6 +613,90 @@
         openEye.style.display = 'none';
         closeEye.style.display = 'block';
       }
+    });
+  }
+
+  // for header language
+  if ($('#ic-header-lang-toggle').length > 0) {
+    window.addEventListener('click', function (e) {
+      if (document.getElementById('ic-header-lang-toggle').contains(e.target)) {
+        $('.ic-header-lang ul').toggleClass('ic-lang-list-open');
+      } else {
+        $('.ic-header-lang ul').removeClass('ic-lang-list-open');
+      }
+    });
+  }
+
+  // for header search
+  if ($('#ic-header-search-toggle').length > 0) {
+    window.addEventListener('click', function (e) {
+      if (
+        document.getElementById('ic-header-search-toggle').contains(e.target)
+      ) {
+        $('.ic-header-search-popup span').toggleClass('ic-search-list-open');
+      } else {
+        $('.ic-header-search-popup button').removeClass('ic-search-list-open');
+      }
+    });
+  }
+
+  // for header account
+  if ($('#ic-header-account-toggle').length > 0) {
+    window.addEventListener('click', function (e) {
+      if (
+        document.getElementById('ic-header-account-toggle').contains(e.target)
+      ) {
+        $('.ic-header-account ul').toggleClass('ic-account-list-open');
+      } else {
+        $('.ic-header-account ul').removeClass('ic-account-list-open');
+      }
+    });
+  }
+
+  ////////////////////////////////////////////////////
+  // 03. Sidebar Js
+  $('.cartmini-open-btn').on('click', function () {
+    $('.cartmini__area').addClass('cartmini-opened');
+    $('.body-overlay').addClass('opened');
+  });
+  $('.cartmini-close-btn').on('click', function () {
+    $('.cartmini__area').removeClass('cartmini-opened');
+    $('.body-overlay').removeClass('opened');
+  });
+
+  ////////////////////////////////////////////////////
+  // 04. Body overlay Js
+  $('.body-overlay').on('click', function () {
+    $('.cartmini__area').removeClass('cartmini-opened');
+    $('.body-overlay').removeClass('opened');
+  });
+
+  /* Price filter active */
+
+  if ($('#slider-range').length) {
+    $('#slider-range').slider({
+      range: true,
+
+      min: 0,
+
+      max: 500,
+
+      values: [75, 300],
+
+      slide: function (event, ui) {
+        $('#amount').val('$' + ui.values[0] + ' - $' + ui.values[1]);
+      },
+    });
+
+    $('#amount').val(
+      '$' +
+        $('#slider-range').slider('values', 0) +
+        ' - $' +
+        $('#slider-range').slider('values', 1)
+    );
+
+    $('#filter-btn').on('click', function () {
+      $('.filter-widget').slideToggle(1000);
     });
   }
 
@@ -648,3 +723,8 @@
     lensSize: 200,
   });
 })(jQuery);
+
+
+
+
+

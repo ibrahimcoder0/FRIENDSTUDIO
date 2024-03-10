@@ -68,10 +68,10 @@
 	animation-delay: 0.3s;
 	animation-duration: 0.3s;
 }
-.slick-active span{
-	animation-delay: 0.5s;
-	animation-duration: 0.5s;
-}
+// .slick-active span{
+// 	animation-delay: 0.5s;
+// 	animation-duration: 0.5s;
+// }
 .slick-active .slider-content p{
 	animation-delay: 0.7s;
 	animation-duration: 0.7s;
@@ -79,7 +79,7 @@
 	animation-delay: 0.9s;
 	animation-duration: 0.9s;
 }
-.slick-active .slider-title, .slick-active span, .slick-active .slider-content p, .slick-active .ic-btn{
+.slick-active .slider-title, .slick-active .slider-content p, .slick-active .ic-btn{
 	animation-name: fadeInUp;
 	animation-fill-mode: both;
 }
