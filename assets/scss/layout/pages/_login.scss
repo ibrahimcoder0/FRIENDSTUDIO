@@ -1,0 +1,314 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.9 Login CSS
+/*----------------------------------------*/
+
+.ic-login-top p a {
+  color: var(--ic-theme-1);
+  position: relative;
+  display: inline-block;
+}
+.ic-login-top p a::after {
+  position: absolute;
+  content: '';
+  left: auto;
+  right: 0;
+  bottom: 4px;
+  width: 0%;
+  height: 1px;
+  background-color: var(--ic-theme-1);
+}
+
+.ic-login-wrapper {
+  padding: 50px 60px 70px;
+  box-shadow: 0px 4px 24px 0px rgba(168, 183, 255, 0.67);
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0px 0px 10px 0px #c3cdff;
+  }
+  & .ic-login-top {
+    & .ic-login-title {
+      font-weight: 500;
+      font-size: 30px;
+      margin-bottom: 4px;
+    }
+    & p {
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--ic-text-body);
+      & a {
+        color: var(--ic-theme-1);
+        position: relative;
+        display: inline-block;
+        &::after {
+          position: absolute;
+          content: '';
+          left: auto;
+          right: 0;
+          bottom: 4px;
+          width: 0%;
+          height: 1px;
+          background-color: var(--ic-theme-1);
+        }
+        &:hover {
+          &::after {
+            left: 0;
+            right: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.ic-login-social {
+  & .ic-login-option-item {
+    margin-bottom: 10px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    & a {
+      display: inline-block;
+      width: 98px;
+      height: 56px;
+      line-height: 54px;
+      text-align: center;
+      border: 1px solid var(--ic-border-1);
+      font-size: 16px;
+      color: #041226;
+    }
+    &.has-google {
+      & a {
+        width: 252px;
+        & img {
+          margin-right: 7px;
+        }
+      }
+    }
+    & a {
+      & img {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+.ic-login-mail {
+  position: relative;
+  z-index: 1;
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e2e3;
+    z-index: -1;
+  }
+  & p {
+    font-size: 15px;
+    color: var(--ic-text-p);
+    margin-bottom: 0;
+    padding: 0 20px;
+    position: relative;
+    display: inline-block;
+    background-color: var(--ic-common-white);
+  }
+}
+.ic-login-input-wrapper {
+  margin-bottom: 14px;
+  & .ic-login-input-box {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 34px;
+    }
+    & .ic-login-input {
+      & input {
+        height: 56px;
+        background: var(--ic-common-white);
+        border: 1px solid var(--ic-border-1);
+        font-size: 14px;
+        color: var(--ic-common-black);
+      }
+    }
+    & .ic-login-input-title {
+      & label {
+        font-size: 14px;
+        color: var(--ic-common-black);
+        position: absolute;
+        top: -7px;
+        left: 20px;
+        padding: 0 5px;
+        background-color: var(--ic-common-white);
+        line-height: 1;
+      }
+    }
+    & .ic-login-input-eye {
+      position: absolute;
+      right: 26px;
+      top: 50%;
+      transform: translateY(-50%);
+      &:hover {
+        cursor: pointer;
+      }
+      & .open-eye {
+        display: none;
+      }
+    }
+  }
+}
+.ic-login-suggetions {
+  & .ic-login-forgot {
+    & a {
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--ic-theme-1);
+      position: relative;
+      display: inline-block;
+      &::after {
+        position: absolute;
+        content: '';
+        left: auto;
+        right: 0;
+        bottom: 4px;
+        width: 0%;
+        height: 1px;
+        background-color: var(--ic-theme-1);
+      }
+      &:hover {
+        &::after {
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.ic-login-btn {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--ic-common-white);
+  background-color: var(--ic-common-black);
+  padding: 14px 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.ic-login-remeber {
+  & input {
+    margin-bottom: 20px;
+    & label {
+      font-weight: 500;
+      color: var(--ic-common-black);
+      padding-bottom: 10px;
+      & span {
+        color: var(--ic-theme-1);
+      }
+    }
+    & input {
+      width: 100%;
+      background: var(--ic-grey-1);
+      border: 0;
+      color: var(--ic-common-black);
+      height: 64px;
+      transition: 0.3s;
+      border: 1px solid transparent;
+      &:focus {
+        border: 1px solid var(--ic-theme-1);
+      }
+    }
+  }
+  & #remeber {
+    & input {
+      display: none;
+      &:checked {
+        & ~ label {
+          &::after {
+            background-color: var(--ic-theme-1);
+            border-color: var(--ic-theme-1);
+          }
+          &::before {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    & label {
+      font-size: 15px;
+      color: var(--ic-text-p);
+      position: relative;
+      padding-left: 26px;
+      z-index: 1;
+      &::after {
+        position: absolute;
+        content: '';
+        top: 3px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        line-height: 16px;
+        text-align: center;
+        // border: 1px solid rgba($color: #060728, $alpha: 0.2);
+        z-index: -1;
+        transition: 0.3s;
+      }
+      &::before {
+        position: absolute;
+        content: '\f00c';
+        top: 0px;
+        left: 5px;
+        font-size: 10px;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        color: var(--ic-common-white);
+        transition: 0.3s;
+        font-family: 'Font Awesome 5 Pro';
+      }
+
+      & a {
+        &:hover {
+          color: var(--ic-common-orange);
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &-forgot {
+    & a {
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--ic-theme-2);
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        position: absolute;
+        content: '';
+        left: auto;
+        right: 0;
+        bottom: 4px;
+        width: 0%;
+        height: 1px;
+        background-color: var(--ic-theme-1);
+      }
+
+      &:hover {
+        &::after {
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

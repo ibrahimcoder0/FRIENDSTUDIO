@@ -1,0 +1,247 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.1 about css start
+/*----------------------------------------*/
+.ic-about-bg {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  display: flex;
+  @media #{$md} {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+.ic-about-wraper {
+  margin-left: -50px;
+  @media #{$sm} {
+    margin-left: 0px;
+  }
+}
+.ic-about-content {
+  background: var(--ic-common-white);
+  padding: 50px 30px;
+  & h5 {
+    font-size: 20px;
+    color: var(--ic-theme-1);
+    margin-bottom: 15px;
+  }
+  & h2 {
+    font-size: 48px;
+    color: var(--ic-heading-primary);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    @media #{$xl} {
+      font-size: 40px;
+    }
+    @media #{$lg} {
+      font-size: 35px;
+    }
+    @media #{$md} {
+      font-size: 25px;
+    }
+    @media #{$sm} {
+      font-size: 25px;
+    }
+  }
+  p {
+    color: var(--ic-text-p);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: block;
+  }
+  a {
+    color: var(--ic-theme-1);
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--ic-theme-1);
+  }
+}
+
+// About count
+.about-bg-red {
+  width: 23.7%;
+  height: 60px;
+  @media #{$md} {
+    width: 22%;
+  }
+  @media #{$sm} {
+    width: 50%;
+  }
+}
+.ic-about-count-num {
+  border-right: 2px dotted;
+  padding: 10px 0;
+  &:last-child(4) {
+    border-right: 0;
+  }
+}
+.ic-about-count-title {
+  color: var(--ic-theme-2);
+  font-size: 48px;
+  font-weight: 700;
+  @media #{$md} {
+    font-size: 35px;
+  }
+  @media #{$sm} {
+    font-size: 30px;
+  }
+}
+.ic-about-count-subtitle {
+  color: var(--ic-common-white);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  @media #{$md} {
+    font-size: 15px;
+  }
+  @media #{$sm} {
+    font-size: 15px;
+  }
+}
+
+// About pages
+.ic-about-page-best-item {
+  @media #{$xl} {
+    margin-right: 0;
+  }
+  @media #{$lg,$md,$sm} {
+    margin: 0px;
+  }
+  & p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: var(--ic-text-p);
+  }
+}
+
+.ic-about-page-eye-text {
+  margin-right: 174px;
+  @media #{$xl} {
+    margin-right: 20px;
+  }
+  @media #{$lg} {
+    margin-right: 0px;
+  }
+  @media #{$md,$sm} {
+    margin-right: 0px;
+  }
+  & p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--ic-common-black);
+    padding-top: 20px;
+    & span {
+      color: var(--ic-theme-1);
+      text-decoration: underline;
+    }
+  }
+}
+.ic-about-page-our-value-area {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+}
+.ic-about-our-value {
+  color: var(--ic-common-white);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  border-bottom: 1px solid var(--ic-common-white);
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.ic-about-page-our-value {
+  & ul {
+    & li {
+      font-size: 18px;
+      list-style: none;
+      color: var(--ic-common-white);
+      font-weight: 500;
+      padding: 5px 0;
+    }
+  }
+}
+
+.ic-about-quality {
+  & ul {
+    padding-top: 20px;
+    & li {
+      display: inline-block;
+      padding: 5px;
+      color: var(--ic-common-black);
+      font-size: 18px;
+      & > i {
+        color: var(--ic-theme-1);
+        margin-right: 5px;
+      }
+      & span {
+        color: var(--ic-theme-1);
+      }
+    }
+  }
+}
+.ic-about-quality-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 180px 0;
+  border-radius: 5px;
+}
+.ic-about-take-img {
+  @media #{$xl} {
+    margin-top: 131px;
+  }
+  @media #{$lg} {
+    margin-top: 270px;
+  }
+}
+.ic-about-take-content {
+  @media #{$md} {
+    margin-bottom: 30px;
+  }
+}
+.ic-about-take-content {
+  @media #{$md} {
+    text-align: center;
+  }
+}
+.ic-about-take-item {
+  margin-top: 32px;
+  @media #{$xl} {
+    margin-top: 0;
+  }
+  & p {
+    color: var(--ic-text-p);
+    font-size: 18px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.ic-about-main-bg {
+  box-shadow: 0px 15px 40px -10px rgba(168, 183, 255, 0.67);
+  border-radius: 10px;
+  margin-top: -100px;
+  padding: 20px 15px 5px 15px;
+}
+.ic-about-service-item {
+  & h2 {
+    color: var(--ic-theme-1);
+    margin: 10px 0;
+    font-size: 45px;
+    @media #{$lg} {
+      font-size: 30px;
+    }
+    @media #{$md, $sm} {
+      font-size: 25px;
+    }
+  }
+}

@@ -574,6 +574,34 @@
     time: 1000,
   });
 
+  // 17. Counter Js
+  new PureCounter();
+  new PureCounter({
+    filesizing: true,
+    selector: '.filesizecount',
+    pulse: 2,
+  });
+
+  ////////////////////////////////////////////////////
+  // 13. Smooth Scroll Js
+  function smoothSctoll() {
+    $('.smooth a').on('click', function (event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body')
+          .stop()
+          .animate(
+            {
+              scrollTop: target.offset().top - 120,
+            },
+            1500
+          );
+      }
+    });
+  }
+  smoothSctoll();
+
   ////////////////////////////////////////////////////
   // 22. Parallax Js
   if ($('.scene').length > 0) {
@@ -700,6 +728,48 @@
     });
   }
 
+  ////////////////////////////////////////////////////
+  // 13. Swiper Js
+  const postboxswiper = new Swiper('.postbox__thumb-slider-active', {
+    // Optional parameters
+    speed: 1000,
+    loop: true,
+    slidesPerView: 1,
+    autoplay: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    breakpoints: {
+      1600: {
+        slidesPerView: 1,
+      },
+      1400: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+
+      a11y: false,
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.postbox-arrow-prev',
+      prevEl: '.postbox-arrow-next',
+    },
+  });
+
   // Product Details
   // ===============
   $('#zoom_02').ezPlus({
@@ -723,8 +793,3 @@
     lensSize: 200,
   });
 })(jQuery);
-
-
-
-
-

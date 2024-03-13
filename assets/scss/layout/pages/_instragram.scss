@@ -1,0 +1,99 @@
+@use '../../utils' as *;
+
+.instragram-active .slick-slide img {
+  display: inline-block;
+}
+.ic-instragram-section-title {
+  & h2 {
+    position: relative;
+    margin-left: 100px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    @media #{$lg,$md} {
+      margin-left: 0;
+    }
+    @media #{$md} {
+      font-size: 35px;
+    }
+    @media #{$sm} {
+      font-size: 25px;
+      text-align: left;
+    }
+    & span {
+      position: absolute;
+      color: var(--ic-common-white);
+      left: 50px;
+      right: 0px;
+      top: 78px;
+      margin: auto;
+      z-index: 999;
+      @media #{$md} {
+        top: 41px;
+      }
+      @media #{$sm} {
+        top: 35px;
+      }
+    }
+  }
+}
+.ic-instragram-descunt-title {
+  position: relative;
+  & h2 {
+    background: var(--ic-common-white);
+    color: var(--ic-theme-1);
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 30px;
+    position: absolute;
+    top: 150px;
+    z-index: 999;
+    @media #{$md} {
+      font-size: 25px;
+      padding: 8px 20px;
+    }
+    @media #{$sm} {
+      font-size: 21px;
+      padding: 8px 20px;
+      left: 20px;
+      top: 50px;
+    }
+  }
+}
+.ic-instragram-btn {
+  & a {
+    color: var(--ic-theme-1);
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--ic-theme-1);
+    line-height: 1;
+  }
+}
+
+.instragram-active.slick-initialized.slick-slider {
+  position: relative;
+}
+.instragram-active.slick-slider i {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--ic-common-white);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--ic-theme-1);
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 24px 0px rgba(153, 171, 189, 0.25);
+  cursor: pointer;
+  z-index: 9;
+}
+.instragram-active.slick-slider i.ic-right {
+  left: auto;
+  right: 5%;
+  cursor: pointer;
+  z-index: 9;
+}

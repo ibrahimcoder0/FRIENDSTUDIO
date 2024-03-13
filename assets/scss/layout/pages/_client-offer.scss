@@ -1,0 +1,29 @@
+@use '../../utils' as *;
+
+.ic-client-offer-slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ic-client-offer-img img {
+  width: 30px;
+  margin-right: 10px;
+}
+.ic-client-offer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ic-client-offer-img span {
+  font-size: 30px;
+  color: var(--ic-common-white);
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1;
+  @media #{$md} {
+    font-size: 20px;
+  }
+  @media #{$sm} {
+    font-size: 17px;
+  }
+}

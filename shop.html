@@ -201,9 +201,12 @@
                   </div>
                   <div class="col-lg-7 d-lg-block d-none">
                      <div class="ic-header-main-search">
-                        <input type="text" class="ic-header-search w-100" placeholder="Search...">
-                        <button type="submit" class="ic-header-btn"><i
-                              class="fa-solid fa-magnifying-glass"></i></button>
+                        <form action="#">
+                           <input type="text" class="ic-header-search w-100" placeholder="Search...">
+                           <button type="submit" class="ic-header-btn">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                           </button>
+                        </form>
                      </div>
                   </div>
                   <div class="col-lg-3 col-7">
@@ -228,11 +231,12 @@
                               <button id="ic-header-search-toggle" class="search-open-btn"><i
                                     class="fa-solid fa-magnifying-glass"></i></button>
                               <div class="ic-header-search-popup ic-header-search-popup">
-                                 <span>
-                                    <input class="search-input-field " type="text" placeholder="Search...">
-                                    <button type="submit" class="ic-search-btn"><i
-                                          class="fa-solid fa-magnifying-glass"></i></button>
-                                 </span>
+                                 <form action="#">
+                                    <span>
+                                       <input class="search-input-field " type="text" placeholder="Search...">
+                                       <button type="submit" class="ic-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </span>
+                                 </form>
                               </div>
                            </div>
                            <div class="ic-header-account-icon ic-header-account p-relative">
@@ -310,7 +314,7 @@
 
    <main>
       <!-- breadcrumb area start -->
-      <section class="ic-breadcrumb-area pt-120 pb-120" data-background="assets/img/breadcrumb/breadcrumb-bg-1.png">
+      <section class="ic-breadcrumb-area pt-120 pb-120 wow fadeInUp" data-background="assets/img/breadcrumb/breadcrumb-bg-1.png" data-wow-duration="1s" data-wow-delay=".3s">
          <div class="container">
             <div class="row">
                <div class="col-lg-12">
@@ -325,7 +329,7 @@
             </div>
          </div>
       </section>
-      <section class="ic-breadcrumb-nav grey-bg pt-30 pb-30">
+      <section class="ic-breadcrumb-nav grey-bg pt-30 pb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -796,7 +800,7 @@
             <div class="row">
                <div class="row">
                   <div class="col-12 d-md-block d-lg-none">
-                     <div class="ic-shop-filter-menu-icon d-flex align-items-start justify-content-between">
+                     <div class="ic-shop-filter-menu-icon d-flex align-items-start justify-content-between " >
                         <!-- Filter By sort -->
                         <div class="ic-filter-by-sort d-flex align-items-center justify-content-between">
                            <h3 class="ic-shop-widget-title fillter-title"> Filters <span><i
@@ -824,7 +828,7 @@
                   <div class="ic-sidebar-area" id="ic-shop-menu">
 
                      <!-- Filter By sort -->
-                     <div class="ic-filter-by-sort d-flex align-items-center justify-content-between">
+                     <div class="ic-filter-by-sort d-flex align-items-center justify-content-between wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <h3 class="ic-shop-widget-title fillter-title"> Filters <span><i
                                  class="fa-sharp fa-light fa-bars-filter"></i></span></h3>
                         <div class="filter">
@@ -842,7 +846,7 @@
                         </div>
                      </div>
                      <!-- categories -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="ic_main_categories">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="ic_main_categories" data-wow-duration="1s" data-wow-delay=".2s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="ic_categore_title">
                               <button class="accordion-button " type="button" data-bs-toggle="collapse"
@@ -868,7 +872,7 @@
                      </div>
 
                      <!-- color -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbycolor">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbycolor" data-wow-duration="1s" data-wow-delay=".3s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="ICFilterColorTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -943,7 +947,7 @@
                      </div>
 
                      <!-- frame size -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbyframesize">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbyframesize" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="icFilterframesizeTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -971,7 +975,7 @@
                      </div>
 
                      <!-- price -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbyprice">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbyprice" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="icFilterpriceTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1005,7 +1009,7 @@
                      </div>
 
                      <!-- Features -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbyFeatures">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbyFeatures" data-wow-duration="1s" data-wow-delay=".5s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="icFilterFeaturesTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1027,7 +1031,7 @@
                      </div>
 
                      <!-- material -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbymaterial">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbymaterial" data-wow-duration="1s" data-wow-delay=".5s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="icFiltermaterialTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1049,7 +1053,7 @@
                      </div>
 
                      <!-- nose pad -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbynosepad">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbynosepad" data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="icFilternosepadTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1071,7 +1075,7 @@
                      </div>
 
                      <!-- spring hinges -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbyspringhinges">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbyspringhinges" data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="icFilterspringhingesTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1093,7 +1097,7 @@
                      </div>
 
                      <!-- badges -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbybadges">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbybadges" data-wow-duration="1s" data-wow-delay=".7s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="icFilterbadgesTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1115,7 +1119,7 @@
                      </div>
 
                      <!-- condition -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbycondition">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbycondition" data-wow-duration="1s" data-wow-delay=".8s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="icFilterconditionTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1137,7 +1141,7 @@
                      </div>
 
                      <!-- ratings -->
-                     <div class="ic-shop-widget mb-15  accordion accordion-flush" id="icfilterbyratings">
+                     <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbyratings" data-wow-duration="1s" data-wow-delay=".9s">
                         <div class="accordion-item">
                            <h3 class="ic-shop-widget-title accordion-header" id="icFilterratingsTitle">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1284,7 +1288,7 @@
 
                <div class="col-xl-9 col-lg-8">
                   <div class="ic-shop-product-area mt-80">
-                     <div class="ic-shop-product-count">
+                     <div class="ic-shop-product-count wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <h3 class="ic-shop-count-title">(11) Items Products</h3>
                         <div class="ic-filter-cournt d-flex align-items-center justify-content-between">
                            <div class="ic-item">
@@ -1297,7 +1301,7 @@
                      </div>
                      <div class="row">
                         <div class=" col-xxl-4 col-lg-6 col-md-6">
-                           <div class="ic-product-area pb-25">
+                           <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                               <div class="ic-product-item">
                                  <div class="ic-product-thumb">
                                     <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1337,7 +1341,7 @@
                            </div>
                         </div>
                         <div class=" col-xxl-4 col-lg-6 col-md-6">
-                           <div class="ic-product-area pb-25">
+                           <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                               <div class="ic-product-item">
                                  <div class="ic-product-thumb">
                                     <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1377,7 +1381,7 @@
                            </div>
                         </div>
                         <div class=" col-xxl-4 col-lg-6 col-md-6">
-                           <div class="ic-product-area pb-25">
+                           <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                               <div class="ic-product-item">
                                  <div class="ic-product-thumb">
                                     <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1417,7 +1421,7 @@
                            </div>
                         </div>
                         <div class=" col-xxl-4 col-lg-6 col-md-6">
-                           <div class="ic-product-area pb-25">
+                           <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                               <div class="ic-product-item">
                                  <div class="ic-product-thumb">
                                     <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1457,7 +1461,7 @@
                            </div>
                         </div>
                         <div class=" col-xxl-4 col-lg-6 col-md-6">
-                           <div class="ic-product-area pb-25">
+                           <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                               <div class="ic-product-item">
                                  <div class="ic-product-thumb">
                                     <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1497,7 +1501,7 @@
                            </div>
                         </div>
                         <div class=" col-xxl-4 col-lg-6 col-md-6">
-                           <div class="ic-product-area pb-25">
+                           <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
                               <div class="ic-product-item">
                                  <div class="ic-product-thumb">
                                     <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1537,7 +1541,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="ic-shop-product-pagi mt-90 text-end">
+                     <div class="ic-shop-product-pagi mt-90 text-end wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".9s">
                         <ul>
                            <li><a href="#"><i class="fa-light fa-arrow-left"></i></a></li>
                            <li><a class="ic-current" href="#">1</a></li>
@@ -1703,7 +1707,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-md-6">
-                  <div class="ic-icon-service-wrapper">
+                  <div class="ic-icon-service-wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                      <div class="ic-icon-service text-center">
                         <img src="assets/img/footer/icon/icon-service1.png" alt="">
                         <h4>Secure Payment</h4>
@@ -1712,7 +1716,7 @@
                   </div>
                </div>
                <div class="col-lg-3 col-md-6">
-                  <div class="ic-icon-service-wrapper">
+                  <div class="ic-icon-service-wrapper wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
                      <div class="ic-icon-service text-center">
                         <img src="assets/img/footer/icon/icon-service2.png" alt="">
                         <h4>Free Shiping</h4>
@@ -1721,7 +1725,7 @@
                   </div>
                </div>
                <div class="col-lg-3 col-md-6">
-                  <div class="ic-icon-service-wrapper">
+                  <div class="ic-icon-service-wrapper wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".7s">
                      <div class="ic-icon-service text-center">
                         <img src="assets/img/footer/icon/icon-service3.png" alt="">
                         <h4>Customer Service</h4>
@@ -1730,7 +1734,7 @@
                   </div>
                </div>
                <div class="col-lg-3 col-md-6">
-                  <div class="ic-icon-service-wrapper">
+                  <div class="ic-icon-service-wrapper wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".9s">
                      <div class="ic-icon-service text-center">
                         <img src="assets/img/footer/icon/icon-service4.png" alt="">
                         <h4>100% Original</h4>
@@ -1743,13 +1747,13 @@
       </div>
       <div class="ic-gray-buttom grey-bg pt-90 pb-90"></div>
       <!-- icon service area end -->
-
+   
       <!-- ic-footer-top-area start -->
       <div class="ic-footer-top-area black-light-bg pt-50 pb-30">
          <div class="container">
             <div class="row">
                <div class="col-lg-4 col-md-6">
-                  <div class="ic-footer-top-item mb-20">
+                  <div class="ic-footer-top-item mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                      <div class="ic-footer-top-content d-flex justify-content-center align-content-center">
                         <a href="#"><i class="fa-sharp fa-light fa-location-dot"></i></a>
                         <div class="ic-footer-top-text">
@@ -1761,7 +1765,7 @@
                   </div>
                </div>
                <div class="col-lg-4 col-md-6">
-                  <div class="ic-footer-top-item mb-20">
+                  <div class="ic-footer-top-item mb-20 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".5s">
                      <div
                         class="ic-footer-top-content d-flex justify-content-lg-center justify-content-start align-content-center">
                         <a href="#"><i class="fa-sharp fa-light fa-phone"></i></a>
@@ -1773,7 +1777,7 @@
                   </div>
                </div>
                <div class="col-lg-4 col-md-6">
-                  <div class="ic-footer-top-item mb-20">
+                  <div class="ic-footer-top-item mb-20 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".7s">
                      <div
                         class="ic-footer-top-content d-flex justify-content-lg-center justify-content-start align-content-center">
                         <a href="#"><i class="fa-sharp fa-regular fa-envelope"></i></a>
@@ -1788,18 +1792,21 @@
          </div>
       </div>
       <!-- ic-footer-top-area end -->
-
+   
       <!-- ic-footer-main-area start -->
       <div class="ic-footer-main-area black-bg pt-50 pb-20">
          <div class="container">
             <div class="row">
                <div class="col-lg-4 col-md-8 col-12">
-                  <div class="ic-footer-widget footer-col-1">
+                  <div class="ic-footer-widget footer-col-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                      <h3 class="ic-footer-widget-title">Sign Up For New Stories & Personal <span>offers</span></h3>
                      <div class="ic-footer-subscribe p-relative pb-40">
-                        <input type="email" placeholder="Enter email address">
-                        <button type="submit" class="subscript-btn"><i
-                              class="fa-sharp fa-regular fa-arrow-right"></i></button>
+                        <form action="#">
+                           <input type="email" placeholder="Enter email address">
+                           <button type="submit" class="subscript-btn">
+                              <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                           </button>
+                        </form>
                      </div>
                      <div class="ic-footer-icion">
                         <ul>
@@ -1811,9 +1818,9 @@
                      </div>
                   </div>
                </div>
-
+   
                <div class="col-lg-2 col-md-4 col-12">
-                  <div class="ic-footer-widget footer-col-2">
+                  <div class="ic-footer-widget footer-col-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                      <h3 class="ic-footer-widget-title">COMPANY</h3>
                      <div class="ic-footer-menu-link">
                         <ul>
@@ -1827,9 +1834,9 @@
                      </div>
                   </div>
                </div>
-
+   
                <div class="col-lg-2 col-md-4 col-12">
-                  <div class="ic-footer-widget footer-col-3">
+                  <div class="ic-footer-widget footer-col-3 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".5s">
                      <h3 class="ic-footer-widget-title">SHOP</h3>
                      <div class="ic-footer-menu-link">
                         <ul>
@@ -1844,11 +1851,11 @@
                         </ul>
                      </div>
                   </div>
-
+   
                </div>
-
+   
                <div class="col-lg-2 col-md-4 col-12">
-                  <div class="ic-footer-widget footer-col-4">
+                  <div class="ic-footer-widget footer-col-4 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".7s">
                      <h3 class="ic-footer-widget-title">CUSTOMER</h3>
                      <div class="ic-footer-menu-link">
                         <ul>
@@ -1860,9 +1867,9 @@
                      </div>
                   </div>
                </div>
-
+   
                <div class="col-lg-2 col-md-4 col-12">
-                  <div class="ic-footer-widget footer-col-2">
+                  <div class="ic-footer-widget footer-col-5 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".9s">
                      <h3 class="ic-footer-widget-title">SUPPORT</h3>
                      <div class="ic-footer-menu-link">
                         <ul>
@@ -1876,20 +1883,20 @@
                      </div>
                   </div>
                </div>
-
+   
             </div>
             <div class="row">
                <div class="col-md-12">
                   <div class="ic-footer-payment-icon text-end">
                      <a href="#"><img class="payment-img" src="assets/img/footer/payment-iocn.png" alt=""></a>
-
+   
                   </div>
                </div>
             </div>
          </div>
       </div>
       <!-- ic-footer-main-area end -->
-
+   
    </footer>
    <!-- footer area end -->
 
@@ -1905,12 +1912,13 @@
    <script src="assets/js/parallax.js"></script>
    <script src="assets/js/backtotop.js"></script>
    <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/purecounter.js"></script>
+   <script src="assets/js/countdown.js"></script>
    <script src="assets/js/counterup.js"></script>
    <script src="assets/js/wow.js"></script>
    <script src="assets/js/isotope-pkgd.js"></script>
    <script src="assets/js/imagesloaded-pkgd.js"></script>
    <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/range-slider.js"></script>
    <script src="assets/js/main.js"></script>
 </body>
 

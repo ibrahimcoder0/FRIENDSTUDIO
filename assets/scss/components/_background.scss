@@ -1,8 +1,8 @@
 @use '../utils' as *;
 
-/*--
-    - Background color
------------------------------------------*/
+/*----------------------------------------*/
+/*  2.6 Background
+/*----------------------------------------*/
 .grey-bg {
 	background: var(--ic-grey-1);
 }
@@ -21,6 +21,7 @@
 .black-bg {
 	background: var(--ic-common-black);
 }
+
 .theme-bg {
 	background: var(--ic-theme-1);
 }

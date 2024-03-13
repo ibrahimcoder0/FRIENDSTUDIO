@@ -46,7 +46,7 @@
    <!-- pre loader area end -->
 
    <!-- back to top start -->
-   <div class="progress-wrap">
+   <div class="progress-wrap" >
       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
       </svg>
@@ -54,7 +54,7 @@
    <!-- back to top end -->
 
    <!-- Cart mini star -->
-   <div class="cartmini__area ">
+   <div class="cartmini__area">
       <div class="cartmini__wrapper d-flex justify-content-between flex-column">
          <div class="cartmini__top-wrapper">
             <div class="cartmini__top p-relative">
@@ -201,9 +201,12 @@
                   </div>
                   <div class="col-lg-7 d-lg-block d-none">
                      <div class="ic-header-main-search">
-                        <input type="text" class="ic-header-search w-100" placeholder="Search...">
-                        <button type="submit" class="ic-header-btn"><i
-                              class="fa-solid fa-magnifying-glass"></i></button>
+                        <form action="#">
+                           <input type="text" class="ic-header-search w-100" placeholder="Search...">
+                           <button type="submit" class="ic-header-btn">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                           </button>
+                        </form>
                      </div>
                   </div>
                   <div class="col-lg-3 col-7">
@@ -228,11 +231,13 @@
                               <button id="ic-header-search-toggle" class="search-open-btn"><i
                                     class="fa-solid fa-magnifying-glass"></i></button>
                               <div class="ic-header-search-popup ic-header-search-popup">
-                                 <span>
-                                    <input class="search-input-field " type="text" placeholder="Search...">
-                                    <button type="submit" class="ic-search-btn"><i
-                                          class="fa-solid fa-magnifying-glass"></i></button>
-                                 </span>
+                                 <form action="#">
+                                    <span>
+                                       <input class="search-input-field " type="text" placeholder="Search...">
+                                       <button type="submit" class="ic-search-btn"><i
+                                             class="fa-solid fa-magnifying-glass"></i></button>
+                                    </span>
+                                 </form>
                               </div>
                            </div>
                            <div class="ic-header-account-icon ic-header-account p-relative">
@@ -310,9 +315,9 @@
    <main>
       <!-- hero slider area start -->
       <div class="ic-slider-area">
-         <div class="slider-active">
+         <div class="slider-active wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
             <div class="ic-slider-item single-slider d-flex align-items-center ic-slider-height "
-               data-background="assets/img/slider/slider.png">
+               data-background="assets/img/slider/slider.png" >
                <div class="container">
                   <div class="row">
                      <div class="col-md-7">
@@ -346,37 +351,37 @@
       <!-- client-offer-slider-area start -->
       <div class="ic-client-offer-slider pt-25 pb-20" data-background="assets/img/client-offer/client-bg.png">
          <div class="ic-client-offer-active">
-            <div class="ic-client-offer-wraper">
+            <div class="ic-client-offer-wraper wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
                <div class="ic-client-offer-img">
                   <img src="assets/img/client-offer/client-offer.png" alt="">
                   <span>50% OFF THE 2ND PAIR</span>
                </div>
             </div>
-            <div class="ic-client-offer-wraper">
+            <div class="ic-client-offer-wraper wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
                <div class="ic-client-offer-img">
                   <img src="assets/img/client-offer/client-offer.png" alt="">
                   <span>50% OFF THE 2ND PAIR</span>
                </div>
             </div>
-            <div class="ic-client-offer-wraper">
+            <div class="ic-client-offer-wraper wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
                <div class="ic-client-offer-img">
                   <img src="assets/img/client-offer/client-offer.png" alt="">
                   <span>50% OFF THE 2ND PAIR</span>
                </div>
             </div>
-            <div class="ic-client-offer-wraper">
+            <div class="ic-client-offer-wraper wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
                <div class="ic-client-offer-img">
                   <img src="assets/img/client-offer/client-offer.png" alt="">
                   <span>50% OFF THE 2ND PAIR</span>
                </div>
             </div>
-            <div class="ic-client-offer-wraper">
+            <div class="ic-client-offer-wraper wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
                <div class="ic-client-offer-img">
                   <img src="assets/img/client-offer/client-offer.png" alt="">
                   <span>50% OFF THE 2ND PAIR</span>
                </div>
             </div>
-            <div class="ic-client-offer-wraper">
+            <div class="ic-client-offer-wraper wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
                <div class="ic-client-offer-img">
                   <img src="assets/img/client-offer/client-offer.png" alt="">
                   <span>50% OFF THE 2ND PAIR</span>
@@ -391,7 +396,7 @@
          <div class="container">
             <div class="row">
                <div class="col-12">
-                  <div class="ic-our-section-title pb-50">
+                  <div class="ic-our-section-title pb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                      <div class="ic-section-content d-flex align-items-center">
                         <img class="mr-15" src="assets/img/icon/title2.png" alt="">
                         <a href="shop.html">
@@ -403,39 +408,39 @@
             </div>
             <div class="row">
                <div class="col-md-6">
-                  <div class="ic-our-collection-item collection-1"
-                     data-background="assets/img/collection/collection1.png">
+                  <div class="ic-our-collection-item collection-1 wow fadeInUp"
+                     data-background="assets/img/collection/collection1.png" data-wow-duration="1.4s" data-wow-delay=".2s">
                      <a href="shop.html" class="ic-btn-collection">WOMEN'S EYEGLASSES <span><i
                               class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
                   </div>
                </div>
                <div class="col-md-6">
-                  <div class="ic-our-collection-item collection-2 mb-25"
-                     data-background="assets/img/collection/collection2.png">
+                  <div class="ic-our-collection-item collection-2 mb-25 wow fadeInUp"
+                     data-background="assets/img/collection/collection2.png" data-wow-duration="1.6s" data-wow-delay=".3s">
                      <a href="shop.html" class="ic-btn-title">MEN'S EYEGLASSES</a>
                   </div>
-                  <div class="ic-our-collection-item collection-2"
-                     data-background="assets/img/collection/collection3.png">
+                  <div class="ic-our-collection-item collection-2 wow fadeInUp"
+                     data-background="assets/img/collection/collection3.png" data-wow-duration="1.9s" data-wow-delay=".4s">
                      <a href="shop.html" class="ic-btn-title">MEN'S EYEGLASSES</a>
                   </div>
                </div>
             </div>
             <div class="row">
                <div class="col-md-6">
-                  <div class="ic-our-collection-item collection-2 mb-25 mt-25"
-                     data-background="assets/img/collection/collection4.png">
+                  <div class="ic-our-collection-item collection-2 mb-25 mt-25 wow fadeInUp"
+                     data-background="assets/img/collection/collection4.png" data-wow-duration="2s" data-wow-delay=".6s">
                      <a href="shop.html" class="ic-btn-title">MEN'S EYEGLASSES</a>
                   </div>
                </div>
                <div class="col-md-3">
-                  <div class="ic-our-collection-item mobile-height collection-2 mb-25 mt-25"
-                     data-background="assets/img/collection/collection5.png">
+                  <div class="ic-our-collection-item mobile-height collection-2 mb-25 mt-25 wow fadeInUp"
+                     data-background="assets/img/collection/collection5.png" data-wow-duration="2.4s" data-wow-delay=".7s">
                      <a href="shop.html" class="ic-btn-title">MEN'S EYEGLASSES</a>
                   </div>
                </div>
                <div class="col-md-3">
-                  <div class="ic-our-collection-item mobile-height collection-2 mb-25 mt-25"
-                     data-background="assets/img/collection/collection6.png">
+                  <div class="ic-our-collection-item mobile-height collection-2 mb-25 mt-25 wow fadeInUp"
+                     data-background="assets/img/collection/collection6.png" data-wow-duration="2.6s" data-wow-delay=".9s">
                      <a href="shop.html" class="ic-btn-title">MEN'S EYEGLASSES</a>
                   </div>
                </div>
@@ -449,7 +454,7 @@
          <div class="container">
             <div class="row">
                <div class="col-12">
-                  <div class="ic-our-section-area text-center pb-50 ">
+                  <div class="ic-our-section-area text-center pb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                      <div class="ic-section-content d-flex align-items-center justify-content-center">
                         <img class="mr-15" src="assets/img/icon/tilte1.png" alt="">
                         <h2 class="ic-section-title">Best Sellers</h2>
@@ -460,7 +465,7 @@
             </div>
             <div class="row">
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -499,7 +504,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".2s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -538,7 +543,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".3s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -577,7 +582,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.8s" data-wow-delay=".4s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -616,7 +621,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".5s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -655,7 +660,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".6s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -694,7 +699,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".7s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -733,7 +738,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".9s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -774,7 +779,7 @@
             </div>
             <div class="row">
                <div class="col-12">
-                  <div class="ic-shope-more text-center pt-60">
+                  <div class="ic-shope-more text-center pt-60 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".9s">
                      <a class="ic-outline-btn" href="#">Shop more</a>
                   </div>
                </div>
@@ -788,7 +793,7 @@
          <div class="container">
             <div class="row">
                <div class="col-12">
-                  <div class="ic-our-section-area  pb-50 ">
+                  <div class="ic-our-section-area  pb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                      <div class="ic-section-content ">
                         <img src="assets/img/icon/title4.png" alt="">
                         <h2 class="ic-section-title">NEW ARRIVAL COLLECTIONS</h2>
@@ -799,7 +804,7 @@
             </div>
             <div class="row">
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -838,7 +843,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".2s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -877,7 +882,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".3s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -916,7 +921,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.8s" data-wow-delay=".4s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -955,7 +960,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".5s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -994,7 +999,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".6s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1033,7 +1038,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".7s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1072,7 +1077,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".9s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1113,7 +1118,7 @@
             </div>
             <div class="row">
                <div class="col-12">
-                  <div class="ic-shope-more text-center pt-60">
+                  <div class="ic-shope-more text-center pt-60 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".9s">
                      <a class="ic-outline-btn" href="#">Shop more</a>
                   </div>
                </div>
@@ -1127,8 +1132,8 @@
          <div class="container">
             <div class="row">
                <div class="col-12">
-                  <div class="ic-our-section-title pb-50">
-                     <div class="ic-section-content d-flex align-items-center justify-content-center">
+                  <div class="ic-our-section-title pb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                     <div class="ic-section-content d-flex align-items-center justify-content-center" >
                         <img class="mr-15" src="assets/img/icon/title3.png" alt="">
                         <h2 class="ic-section-title">SHOP BY EYEGLASSES</h2>
                      </div>
@@ -1137,8 +1142,8 @@
             </div>
             <div class="row">
                <div class="col-md-6">
-                  <div class="ic-our-collection-item collection-1"
-                     data-background="assets/img/collection/collection7.png">
+                  <div class="ic-our-collection-item collection-1 wow fadeInUp"
+                     data-background="assets/img/collection/collection7.png" data-wow-duration="1.4s" data-wow-delay=".2s">
                      <a href="#" class="ic-btn-collection">WOMEN'S EYEGLASSES <span><i
                               class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
                   </div>
@@ -1146,14 +1151,14 @@
                <div class="col-md-6">
                   <div class="row">
                      <div class="col-md-6">
-                        <div class="ic-our-collection-item collection-2 mb-25"
-                           data-background="assets/img/collection/collection8.png">
+                        <div class="ic-our-collection-item collection-2 mb-25 wow fadeInUp"
+                           data-background="assets/img/collection/collection8.png" data-wow-duration="1.6s" data-wow-delay=".3s">
                            <a href="#" class="ic-btn-title black">MEN'S EYEGLASSES</a>
                         </div>
                      </div>
                      <div class="col-md-6">
-                        <div class="ic-our-collection-item collection-2 mb-25"
-                           data-background="assets/img/collection/collection9.png">
+                        <div class="ic-our-collection-item collection-2 mb-25 wow fadeInUp"
+                           data-background="assets/img/collection/collection9.png" data-wow-duration="1.6s" data-wow-delay=".5s">
                            <a href="#" class="ic-btn-title black">MEN'S EYEGLASSES</a>
                         </div>
                      </div>
@@ -1161,8 +1166,8 @@
 
                   <div class="row">
                      <div class="col-md-12">
-                        <div class="ic-our-collection-item collection-2 mb-25"
-                           data-background="assets/img/collection/collection10.png">
+                        <div class="ic-our-collection-item collection-2 mb-25 wow fadeInUp"
+                           data-background="assets/img/collection/collection10.png" data-wow-duration="1.6s" data-wow-delay=".7s">
                            <a href="#" class="ic-btn-title black">MEN'S EYEGLASSES</a>
                         </div>
                      </div>
@@ -1174,19 +1179,20 @@
       <!-- our collection area end -->
 
       <!-- Flash sale area start -->
-      <div class="flash-sale-area " data-background="assets/img/bg/sale-bg3.png">
+      <div class="flash-sale-area wow fadeInUp" data-background="assets/img/bg/sale-bg3.png" data-countdown
+         data-date="Sep 19 2024 20:20:22" data-wow-duration="1.6s" data-wow-delay=".7s">
          <div class="container">
             <div class="row">
-               <div class="flash-sale-title text-center">
+               <div class="flash-sale-title text-center " >
                   <h2 class="ic-section-title white-title">FLASH SALES</h2>
                   <p class="ic-section-sub-title white-subtitle">Deals Updates Daily</p>
                   <div class="flash-sale-time mt-130">
                      <div class="flash-sale-number">
                         <ul>
-                           <li>05</li>
-                           <li>12</li>
-                           <li>34</li>
-                           <li>44</li>
+                           <li data-days>05</li>
+                           <li data-hours>12</li>
+                           <li data-minutes>34</li>
+                           <li data-seconds>44</li>
                         </ul>
                      </div>
                      <div class="flash-sale-text">
@@ -1209,7 +1215,7 @@
          <div class="container">
             <div class="row">
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1248,7 +1254,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".2s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1287,7 +1293,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".3s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1326,7 +1332,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.8s" data-wow-delay=".4s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1365,7 +1371,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".5s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1404,7 +1410,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".6s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1443,7 +1449,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".7s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1482,7 +1488,7 @@
                   </div>
                </div>
                <div class=" col-xxl-3 col-lg-4 col-md-6">
-                  <div class="ic-product-area pb-25">
+                  <div class="ic-product-area pb-25 wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".9s">
                      <div class="ic-product-item">
                         <div class="ic-product-thumb">
                            <div class="ic-product-wraper d-flex align-items-start justify-content-between">
@@ -1523,7 +1529,7 @@
             </div>
             <div class="row">
                <div class="col-12">
-                  <div class="ic-shope-more text-center pt-60">
+                  <div class="ic-shope-more text-center pt-60 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".9s">
                      <a class="ic-outline-btn" href="#">Shop more</a>
                   </div>
                </div>
@@ -1533,11 +1539,11 @@
       <!-- flash sale product area end  -->
 
       <!-- testimonial are start -->
-      <div class="ic-testimonial-area pt-90 pb-90">
+      <div class="ic-testimonial-area pt-90 pb-90 " >
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <div class="ic-testimonial-wraper d-flex align-items-center justify-content-between">
+                  <div class="ic-testimonial-wraper d-flex align-items-center justify-content-between wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".5s">
                      <h2 class="ic-testi-title">What Our Clients Are Saying</h2>
                      <div class="ic-testimonial-rating text-center">
                         <h6><span><i class="fa-sharp fa-regular fa-angle-down"></i></span>Trustindex</h6>
@@ -1555,7 +1561,7 @@
                </div>
             </div>
             <div class="row">
-               <div class="testimonial-active">
+               <div class="testimonial-active wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".7s">
                   <div class="ic-testimonial-item mt-60">
                      <div class="ic-testimonial-content text-center">
                         <img src="assets/img/testimonial/testimonial1.png" alt="">
@@ -1647,13 +1653,13 @@
          <div class="container">
             <div class="row g-0 align-items-center">
                <div class="col-md-6">
-                  <div class="ic-about-bg" data-background="assets/img/about/about-bg.png">
+                  <div class="ic-about-bg wow fadeInUp" data-background="assets/img/about/about-bg.png" data-wow-duration="1.6s" data-wow-delay=".9s">
                      <a class="ic-about-icon-play popup-video" href="https://www.youtube.com/watch?v=CUDEVgDeCfI"><img
                            src="assets/img/about/about-icon.png" alt=""></a>
                   </div>
                </div>
                <div class="col-md-6">
-                  <div class="ic-about-wraper">
+                  <div class="ic-about-wraper wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                      <div class="ic-about-content">
                         <h5>About Us</h5>
                         <h2>All our members are absolutely professionals</h2>
@@ -1663,37 +1669,44 @@
                   </div>
                </div>
             </div>
-            <div class="about-bg-red" data-background="assets/img/about/about-bg-red.png"></div>
-            <div class="ic-about-count-area black-bg mb-50">
+            <div class="about-bg-red wow fadeInUp" data-background="assets/img/about/about-bg-red.png" data-wow-duration="1.6s" data-wow-delay=".7s"></div>
+            <div class="ic-about-count-area black-bg wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".5s">
                <div class="row">
                   <div class="col-md-3">
-                     <div class="ic-about-count-num">
+                     <div class="ic-about-count-num mb-30 mt-30">
                         <div class="ic-abut-count-text text-center">
-                           <h2 class="ic-about-count-title">250+</h2>
+                           <h2 class="ic-about-count-title"><i class="purecounter" data-purecounter-duration="1"
+                                 data-purecounter-end="250">0</i>+</h2>
                            <h6 class="ic-about-count-subtitle">Happy Customer</h6>
                         </div>
                      </div>
                   </div>
                   <div class="col-md-3">
-                     <div class="ic-about-count-num">
+                     <div class="ic-about-count-num mb-30 mt-30">
                         <div class="ic-abut-count-text text-center">
-                           <h2 class="ic-about-count-title">100+</h2>
+                           <h2 class="ic-about-count-title"><i class="purecounter" data-purecounter-duration="1"
+                                 data-purecounter-end="100">0</i>+
+                           </h2>
                            <h6 class="ic-about-count-subtitle">Best Service Provided</h6>
                         </div>
                      </div>
                   </div>
                   <div class="col-md-3">
-                     <div class="ic-about-count-num">
+                     <div class="ic-about-count-num mb-30 mt-30">
                         <div class="ic-abut-count-text text-center">
-                           <h2 class="ic-about-count-title">12+</h2>
+                           <h2 class="ic-about-count-title"><i class="purecounter" data-purecounter-duration="1"
+                                 data-purecounter-end="12">0</i>+
+                           </h2>
                            <h6 class="ic-about-count-subtitle">Years Of Experience</h6>
                         </div>
                      </div>
                   </div>
                   <div class="col-md-3">
-                     <div class="ic-about-count-num">
+                     <div class="ic-about-count-num mb-30 mt-30">
                         <div class="ic-abut-count-text text-center">
-                           <h2 class="ic-about-count-title">300+</h2>
+                           <h2 class="ic-about-count-title"><i class="purecounter" data-purecounter-duration="1"
+                                 data-purecounter-end="300">0</i>+
+                           </h2>
                            <h6 class="ic-about-count-subtitle">Our Business Partner</h6>
                         </div>
                      </div>
@@ -1708,12 +1721,12 @@
       <div class="ic-blog-area yellow-bg pt-60 pb-60">
          <div class="container">
             <div class="row">
-               <div class="ic-section-blog-title pb-30 text-center">
+               <div class="ic-section-blog-title pb-30 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                   <h2>OUR LATEST BLOG POSTS</h2>
                </div>
             </div>
             <div class="row">
-               <div class="blog-active">
+               <div class="blog-active wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
                   <div class="ic-blog-wraper">
                      <div class="ic-blog-thumb">
                         <a href="#"><img class="w-100" src="assets/img/blog/blog1.png" alt=""></a>
@@ -1765,18 +1778,18 @@
          <div class="container">
             <div class="row g-0">
                <div class="col-md-6">
-                  <div class="ic-instragram-section-title ">
+                  <div class="ic-instragram-section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
                      <h2>FOLLOW TO OUR <br> <span>INSTAGRAM</span> </h2>
                   </div>
                </div>
                <div class="col-md-6">
-                  <div class="ic-instragram-descunt-title">
+                  <div class="ic-instragram-descunt-title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
                      <h2>🤨 Up to 50% Discount</h2>
                   </div>
                </div>
             </div>
             <div class="row g-0">
-               <div class="instragram-active">
+               <div class="instragram-active wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                   <div class="ic-instragram-wraper ">
                      <div class="ic-instragram-item">
                         <a href="#"><img class="w-100" src="assets/img/instragram/instragram3.jpg" alt=""></a>
@@ -1803,7 +1816,7 @@
             </div>
             <div class="row">
                <div class="col-md-12">
-                  <div class="ic-instragram-btn mt-50 text-end">
+                  <div class="ic-instragram-btn mt-50 text-end wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
                      <a href="#">Follow on Instagram</a>
                   </div>
                </div>
@@ -1822,7 +1835,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-md-6">
-                  <div class="ic-icon-service-wrapper">
+                  <div class="ic-icon-service-wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                      <div class="ic-icon-service text-center">
                         <img src="assets/img/footer/icon/icon-service1.png" alt="">
                         <h4>Secure Payment</h4>
@@ -1831,7 +1844,7 @@
                   </div>
                </div>
                <div class="col-lg-3 col-md-6">
-                  <div class="ic-icon-service-wrapper">
+                  <div class="ic-icon-service-wrapper wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
                      <div class="ic-icon-service text-center">
                         <img src="assets/img/footer/icon/icon-service2.png" alt="">
                         <h4>Free Shiping</h4>
@@ -1840,7 +1853,7 @@
                   </div>
                </div>
                <div class="col-lg-3 col-md-6">
-                  <div class="ic-icon-service-wrapper">
+                  <div class="ic-icon-service-wrapper wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".7s">
                      <div class="ic-icon-service text-center">
                         <img src="assets/img/footer/icon/icon-service3.png" alt="">
                         <h4>Customer Service</h4>
@@ -1849,7 +1862,7 @@
                   </div>
                </div>
                <div class="col-lg-3 col-md-6">
-                  <div class="ic-icon-service-wrapper">
+                  <div class="ic-icon-service-wrapper wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".9s">
                      <div class="ic-icon-service text-center">
                         <img src="assets/img/footer/icon/icon-service4.png" alt="">
                         <h4>100% Original</h4>
@@ -1868,7 +1881,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-4 col-md-6">
-                  <div class="ic-footer-top-item mb-20">
+                  <div class="ic-footer-top-item mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                      <div class="ic-footer-top-content d-flex justify-content-center align-content-center">
                         <a href="#"><i class="fa-sharp fa-light fa-location-dot"></i></a>
                         <div class="ic-footer-top-text">
@@ -1880,7 +1893,7 @@
                   </div>
                </div>
                <div class="col-lg-4 col-md-6">
-                  <div class="ic-footer-top-item mb-20">
+                  <div class="ic-footer-top-item mb-20 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".5s">
                      <div
                         class="ic-footer-top-content d-flex justify-content-lg-center justify-content-start align-content-center">
                         <a href="#"><i class="fa-sharp fa-light fa-phone"></i></a>
@@ -1892,7 +1905,7 @@
                   </div>
                </div>
                <div class="col-lg-4 col-md-6">
-                  <div class="ic-footer-top-item mb-20">
+                  <div class="ic-footer-top-item mb-20 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".7s">
                      <div
                         class="ic-footer-top-content d-flex justify-content-lg-center justify-content-start align-content-center">
                         <a href="#"><i class="fa-sharp fa-regular fa-envelope"></i></a>
@@ -1913,12 +1926,15 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-4 col-md-8 col-12">
-                  <div class="ic-footer-widget footer-col-1">
+                  <div class="ic-footer-widget footer-col-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                      <h3 class="ic-footer-widget-title">Sign Up For New Stories & Personal <span>offers</span></h3>
                      <div class="ic-footer-subscribe p-relative pb-40">
-                        <input type="email" placeholder="Enter email address">
-                        <button type="submit" class="subscript-btn"><i
-                              class="fa-sharp fa-regular fa-arrow-right"></i></button>
+                        <form action="#">
+                           <input type="email" placeholder="Enter email address">
+                           <button type="submit" class="subscript-btn">
+                              <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                           </button>
+                        </form>
                      </div>
                      <div class="ic-footer-icion">
                         <ul>
@@ -1932,7 +1948,7 @@
                </div>
 
                <div class="col-lg-2 col-md-4 col-12">
-                  <div class="ic-footer-widget footer-col-2">
+                  <div class="ic-footer-widget footer-col-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                      <h3 class="ic-footer-widget-title">COMPANY</h3>
                      <div class="ic-footer-menu-link">
                         <ul>
@@ -1948,7 +1964,7 @@
                </div>
 
                <div class="col-lg-2 col-md-4 col-12">
-                  <div class="ic-footer-widget footer-col-3">
+                  <div class="ic-footer-widget footer-col-3 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".5s">
                      <h3 class="ic-footer-widget-title">SHOP</h3>
                      <div class="ic-footer-menu-link">
                         <ul>
@@ -1967,7 +1983,7 @@
                </div>
 
                <div class="col-lg-2 col-md-4 col-12">
-                  <div class="ic-footer-widget footer-col-4">
+                  <div class="ic-footer-widget footer-col-4 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".7s">
                      <h3 class="ic-footer-widget-title">CUSTOMER</h3>
                      <div class="ic-footer-menu-link">
                         <ul>
@@ -1981,7 +1997,7 @@
                </div>
 
                <div class="col-lg-2 col-md-4 col-12">
-                  <div class="ic-footer-widget footer-col-2">
+                  <div class="ic-footer-widget footer-col-5 wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".9s">
                      <h3 class="ic-footer-widget-title">SUPPORT</h3>
                      <div class="ic-footer-menu-link">
                         <ul>
@@ -2024,6 +2040,8 @@
    <script src="assets/js/parallax.js"></script>
    <script src="assets/js/backtotop.js"></script>
    <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/purecounter.js"></script>
+   <script src="assets/js/countdown.js"></script>
    <script src="assets/js/counterup.js"></script>
    <script src="assets/js/wow.js"></script>
    <script src="assets/js/isotope-pkgd.js"></script>
