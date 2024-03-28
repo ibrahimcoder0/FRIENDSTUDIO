@@ -91,10 +91,29 @@
     }
   }
 }
-
+.profile__info-title {
+  @media #{$sm} {
+    font-size: 20px;
+  }
+}
+.profile__address-title {
+  @media #{$sm} {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+.profile__notification-title {
+  @media #{$sm} {
+    font-size: 20px;
+  }
+}
 .profile__main-title {
   font-size: 24px;
   margin-bottom: 0;
+  @media #{$sm} {
+    font-size: 18px;
+    margin-top: 15px;
+  }
 }
 .profile__main-content {
   & p {

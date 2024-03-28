@@ -63,13 +63,13 @@
     font-weight: 500;
     margin-right: 20px;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
     &:hover {
       color: var(--ic-theme-1);
     }
-    @media #{$sm} {
-      display: none;
-    }
+    // @media #{$sm} {
+    //   display: none;
+    // }
   }
 }
 .ic-header-account-popup {
@@ -91,6 +91,10 @@
         opacity: 1;
         visibility: visible;
         top: 180%;
+        @media #{$sm} {
+          left: auto;
+          right: -115px;
+        }
       }
       & li {
         list-style: none;
@@ -121,6 +125,10 @@
       opacity: 1;
       visibility: visible;
       top: 167%;
+      @media #{$sm} {
+        left: auto;
+        right: -115px;
+      }
     }
   }
 }
@@ -131,7 +139,7 @@
     font-weight: 500;
     margin-right: 25px;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
     &:hover {
       color: var(--ic-theme-1);
     }
@@ -141,7 +149,7 @@
   & i {
     font-size: 25px;
     font-weight: 500;
-    transition: .4s;
+    transition: 0.4s;
     &:hover {
       color: var(--ic-theme-1);
     }
@@ -347,12 +355,18 @@
 
 .header-sticky.ic-header-main-area .ic-header-right-icon {
   display: block !important;
+  @media #{$sm} {
+    display: none !important;
+  }
 }
 .header-sticky.ic-header-main-area .ic-header-top-lang-item {
   display: none !important;
 }
 
 .ic-header-top-lang-item {
+  @media #{$sm} {
+    display: none;
+  }
   position: relative;
   padding: 3px 14px 4px 18px;
   & > span {
@@ -362,8 +376,8 @@
     font-size: 16px;
     color: var(--ic-common-black);
     padding-right: 20px;
-    transition: .4s;
-    &:hover{
+    transition: 0.4s;
+    &:hover {
       color: var(--ic-theme-1);
     }
     &::after {

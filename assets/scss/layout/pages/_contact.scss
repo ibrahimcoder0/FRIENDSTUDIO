@@ -480,7 +480,7 @@
         @media #{$lg}{
             padding: 60px 50px;
         }
-        @media #{$md,$xs}{
+        @media #{$md,$sm,$xs}{
             padding: 60px 0px;
             border: none;
         }

@@ -266,7 +266,7 @@
         breakpoint: 768,
         settings: {
           arrows: false,
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
@@ -297,7 +297,7 @@
         breakpoint: 768,
         settings: {
           arrows: false,
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
