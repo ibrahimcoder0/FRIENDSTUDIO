@@ -700,33 +700,49 @@
   });
 
   /* Price filter active */
+  		$('#slider-range').slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [75, 300],
+        slide: function (event, ui) {
+          $('#amount').val('$' + ui.values[0] + ' - $' + ui.values[1]);
+        },
+      });
+      $('#amount').val(
+        '$' +
+          $('#slider-range').slider('values', 0) +
+          ' - $' +
+          $('#slider-range').slider('values', 1)
+      );
 
-  if ($('#slider-range').length) {
-    $('#slider-range').slider({
-      range: true,
 
-      min: 0,
+  // if ($('#slider-range').length) {
+  //   $('#slider-range').slider({
+  //     range: true,
 
-      max: 500,
+  //     min: 0,
 
-      values: [75, 300],
+  //     max: 500,
 
-      slide: function (event, ui) {
-        $('#amount').val('$' + ui.values[0] + ' - $' + ui.values[1]);
-      },
-    });
+  //     values: [75, 300],
 
-    $('#amount').val(
-      '$' +
-        $('#slider-range').slider('values', 0) +
-        ' - $' +
-        $('#slider-range').slider('values', 1)
-    );
+  //     slide: function (event, ui) {
+  //       $('#amount').val('$' + ui.values[0] + ' - $' + ui.values[1]);
+  //     },
+  //   });
 
-    $('#filter-btn').on('click', function () {
-      $('.filter-widget').slideToggle(1000);
-    });
-  }
+  //   $('#amount').val(
+  //     '$' +
+  //       $('#slider-range').slider('values', 0) +
+  //       ' - $' +
+  //       $('#slider-range').slider('values', 1)
+  //   );
+
+  //   $('#filter-btn').on('click', function () {
+  //     $('.filter-widget').slideToggle(1000);
+  //   });
+  // }
 
   ////////////////////////////////////////////////////
   // 13. Swiper Js

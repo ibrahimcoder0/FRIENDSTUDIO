@@ -232,3 +232,45 @@ h3.ic-shop-count-title {
     padding-bottom: 194px;
   }
 }
+
+
+.ic-shop-widget-filter {
+    position: relative;
+}
+.ic-shop-widget-filter .ui-widget.ui-widget-content {
+    height: 3px;
+    background-color: #EDEDED;
+    border: 0;
+}
+.ic-shop-widget-filter .ui-slider-horizontal .ui-slider-range {
+    background-color: var(--ic-theme-1);
+    position: absolute;
+}
+.ic-shop-widget-filter .ui-slider .ui-slider-handle {
+    top: -7px;
+    width: 5px;
+    height: 17px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: var(--ic-theme-1);
+    position: absolute;
+}
+.ic-shop-widget-filter-info .input-range input {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: var(--ic-common-black);
+    padding: 0;
+    border: 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+.ic-shop-widget-filter-info .ic-shop-widget-filter-btn {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--ic-common-black);
+    background-color: #F5F5F5;
+    padding: 2px 21px;
+}
