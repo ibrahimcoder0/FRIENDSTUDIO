@@ -714,7 +714,24 @@
           $('#slider-range').slider('values', 0) +
           ' - $' +
           $('#slider-range').slider('values', 1)
-      );
+  );
+  
+    //mobile price filter
+    		$('#mobile-slider-range').slider({
+          range: true,
+          min: 0,
+          max: 500,
+          values: [75, 300],
+          slide: function (event, ui) {
+            $('#mobile_amount').val('$' + ui.values[0] + ' - $' + ui.values[1]);
+          },
+        });
+        $('#mobile_amount').val(
+          '$' +
+            $('#mobile-slider-range').slider('values', 0) +
+            ' - $' +
+            $('#mobile-slider-range').slider('values', 1)
+        );
 
 
   // if ($('#slider-range').length) {

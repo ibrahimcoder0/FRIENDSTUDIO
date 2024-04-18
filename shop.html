@@ -503,21 +503,34 @@
             </div>
 
             <!-- price -->
-            <div class="ic-shop-widget mb-15  accordion accordion-flush" id="ICfilterbyprice">
+            <div class="ic-shop-widget mb-15  accordion accordion-flush wow fadeInUp" id="icfilterbyprice"
+               data-wow-duration="1s" data-wow-delay=".4s">
                <div class="accordion-item">
-                  <h3 class="ic-shop-widget-title accordion-header" id="ICFilterpriceTitle">
+                  <h3 class="ic-shop-widget-title accordion-header" id="icFilterpriceTitle">
                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#IC_priceFilter-collapseOne" aria-expanded="false"
-                        aria-controls="IC_priceFilter-collapseOne">
+                        data-bs-target="#ic_priceFilter-collapseOne" aria-expanded="false"
+                        aria-controls="ic_priceFilter-collapseOne">
                         price
                      </button>
                   </h3>
-                  <div class="ic-shop-widget-content accordion-collapse collapse" id="IC_priceFilter-collapseOne"
-                     aria-labelledby="ICFilterpriceTitle" data-bs-parent="#ICfilterbyprice">
+                  <div class="ic-shop-widget-content accordion-collapse collapse" id="ic_priceFilter-collapseOne"
+                     aria-labelledby="icFilterpriceTitle" data-bs-parent="#icfilterbyprice">
                      <div class="ic-shop-widget-checkbox-circle-list accordion-body">
-                        <ul>
-                           <li>No filters </li>
-                        </ul>
+                        <div class="ic-shop-widget mb-35">
+                           <div class="ic-shop-widget-content">
+                              <div class="ic-shop-widget-filter">
+                                 <div id="mobile-slider-range" class="mb-10"></div>
+                                 <div
+                                    class="ic-shop-widget-filter-info d-flex align-items-center justify-content-between">
+                                    <span class="input-range">
+                                       <input type="text" id="mobile_amount" readonly>
+                                    </span>
+                                    <button class="ic-shop-widget-filter-btn" type="button">Filter</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
                      </div>
                   </div>
                </div>
